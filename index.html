@@ -1,13 +1,11 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Sumit Goel</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 	</script>
-	<style>
+<style>
 .collapsible {
   background-color: #777;
   color: white;
@@ -19,35 +17,31 @@
   outline: none;
   font-size: 10px;
 }
-
 .active, .collapsible:hover {
   background-color: #555;
 }
 
 .content {
   padding: 0 18px;
-  max-height: 0;
+  display: none;
   overflow: hidden;
-  transition: max-height 0.2s ease-out;
   background-color: #f1f1f1;
 }
 </style>
 </head>
-
 <body>
-    <header>
+<header>
         <h1>Sumit Goel</h1>
     </header>
-    <img src="files/sumit.jpg" style="float:right"><br>
-
+	<img src="files/sumit.jpg" style="float:right"><br>
     <section>
         I am a fifth year graduate student in Economics at Caltech.<br> 
         My research interests are in Economic theory and 
         my advisor is <a href="http://www.its.caltech.edu/~fede/">Federico Echenique</a>.<br>
         <a href="files/CV.pdf">CV</a><br>
     </section>
-    <section>
-      <h2>Working papers</h2>
+<section>
+ <h2>Working papers</h2>
 	<ul>
 		<li>
           <b>Stable allocations in discrete economies</b><br>
@@ -77,7 +71,9 @@
 			</div>
         </li>
 	</ul>
-	</section>
+
+</section>
+
 <script>
 var coll = document.getElementsByClassName("collapsible");
 var i;
@@ -94,6 +90,6 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 </script>
-	
+
 </body>
 </html>
