@@ -6,33 +6,26 @@
 	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 	<style>
 	.collapsible {
-  	background-color: #777;
-  	color: white;
-  	cursor: pointer;
-  	padding: 6px;
-  	border: none;
-  	text-align: left;
-  	outline: none;
-  	font-size: 10px;
 	}
 	.active, .collapsible:hover {
-  	background-color: #555;
 	}
-
 	.content {
   	padding: 0 18px;
   	display: none;
   	overflow: hidden;
   	background-color: #f1f1f1;
 	}
-</style>
+	li:not(:last-child) {
+    margin-bottom: 10px;
+	}
+	</style>
 </head>
 
 <body>
 	<header>
     <h1>Sumit Goel</h1>
     </header>
-	<img src="files/sumit.jpg" style="float:right"><br>
+	<img src="files/sumit.jpg" style="float:right" height="300" border-radius="50%"><br>
     <section>
         I am a fifth year graduate student in Economics at Caltech.<br> 
         My research interests are in Economic theory and 
@@ -53,16 +46,16 @@
         </li>
         <li>
           <b>Project selection with partially verifiable information</b><br>
-          (with Wade Hann-Caruthers)<br>
+          (with <a href="https://www.hss.caltech.edu/people/wade-d-hann-caruthers">Wade Hann-Caruthers</a>)<br>
           	<input type="button" onclick="location.href='https://arxiv.org/abs/2007.00907';" value="arXiv" />	
           	<button class="collapsible">Abstract</button>
 			<div class="content">
-  			<p>We consider a problem where the principal chooses a project from a set of available projects for the agent to work on. Each project provides some profit to the principal and some payoff to the agent and these profits and payoffs are the agent's private information. The principal has a belief over these values and his problem is to find an incentive compatible mechanism without using transfers that maximizes expected profit. Importantly, we assume partial verifiability so that the agent cannot report a project to be more profitable to the principal than it actually is. In this setup, we find a neat characterization of the set of incentive compatible mechanisms. Using this characterization, we find the optimal mechanism for the principal when there are two projects. Within a subclass of incentive compatible mechanisms, we show that a single cutoff mechanism is optimal and conjecture that it is the optimal incentive compatible mechanism..</p>
+  			<p>We consider a principal agent project selection problem with asymmetric information. Each project provides some profit to the principal and some payoff to the agent and these profits and payoffs are the agent's private information. We consider the principal's problem of finding an optimal mechanism for two different objectives: maximizing expected profit and maximizing the probability of choosing the most profitable project. Importantly, we assume partial verifiability so that the agent cannot report a project to be more profitable to the principal than it actually is. Under this no-overselling constraint, we characterize the set of implementable mechanisms. Using this characterization, we find that in the case of two projects, the optimal mechanism under both objectives takes the form of a simple cutoff mechanism. The simple structure of the optimal mechanism also allows us to find evidence in support of the well-known ally-principal which says that principal delegates more authority to an agent who shares their preferences.</p>
 			</div>
         </li>
         <li>
-          <b>Optimality of the coordinate-wise median mechanism for strategyproof facility location in two dimensions</b>
-          (with Wade Hann-Caruthers)<br>
+          <b>Optimality of the coordinate-wise median mechanism for strategyproof facility location in two dimensions</b><br>
+          (with <a href="https://www.hss.caltech.edu/people/wade-d-hann-caruthers">Wade Hann-Caruthers</a>)<br>
           <input type="button" onclick="location.href='https://arxiv.org/abs/2007.00903';" value="arXiv" />
           <button class="collapsible">Abstract</button>
 			<div class="content">
