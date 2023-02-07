@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
     <script src="https://kit.fontawesome.com/fa0d550621.js" crossorigin="anonymous"></script>
@@ -36,17 +38,24 @@
       <div class="contact-details">
         <h3>Sumit Goel</h3>
         <p> PhD student in Economics at the California Institute of Technology</p>
-        
+        <!-- 
+
        	<h4> Contact </h4>
+ -->
  		<p><i class="fas fa-envelope"></i> <a href="mailto:sgoel@caltech.edu">sgoel@caltech.edu</a></p>
   		<p><i class="fas fa-phone"></i> +1 (626) 353-8184</p>
   
-		<h4> Files </h4>
+		<!-- 
+<h4> Files </h4>
 		<p> <a href="files/CV.pdf"> CV </a></p>  
+ -->
+<!-- 
 		
   		<h4> Social Media </h4>
+ -->
         <div class="social-media-links" align="center">
-            <a href="https://scholar.google.co.in/citations?hl=en&user=htu-rZcAAAAJ"><i class="fa fa-google"></i></a>
+         	<a href="files/CV.pdf"><i class="ai ai-cv-square"></i></a>
+            <a href="https://scholar.google.co.in/citations?hl=en&user=htu-rZcAAAAJ"><i class="ai ai-google-scholar-square"></i></a>
             <a href="https://twitter.com/sumitgoel8"><i class="fa fa-twitter-square"></i></a>
             <a href="https://www.linkedin.com/in/sumitgoel8/"><i class="fa fa-linkedin-square"></i></a>
             <a href="https://github.com/sumitgoel8"><i class="fa fa-github-square"></i></a>
@@ -58,7 +67,7 @@
     <main>
     
     <section id="home">
-    <h2>About Me</h2>
+    <h2>Bio</h2>
     <p>I am a PhD student in economics at the California Institute of Technology. My research interests are in microeconomic theory and my
 	advisor is <a href="https://eml.berkeley.edu/~fechenique/index.html">Federico Echenique</a>. I am on the 2022-2023 job market.
 	</p>
@@ -69,39 +78,44 @@
       <h3>Working papers</h3>
       <ul>
         <li>
-          <h4>Prizes and effort in contests with private information <span><a href="files/contests.pdf">[pdf]</a> </span> </h4>
+          <p> <b> Prizes and effort in contests with private information </b><a href="files/contests.pdf">[pdf]</a> <br>
+          <button id="button-1" onclick="toggleAbstract(1)">Show abstract</button>
+        	</p>
+           
           	<p class="abstract" id="abstract-1">We consider contests where participants have private information about their ability and the contest designer can manipulate the values of different prizes to influence effort. We study the effect on effort of two different interventions: increase in the value of prizes and increase in competition (transfer of value from worse to better prizes). We identify two natural sufficient conditions on the distribution of abilities in the population under which both interventions have opposite effects on effort. More precisely, we find that if the density of agents is decreasing in ability so that unproductive agents are more likely than productive agents, the two interventions encourage effort. And if this density is monotone increasing in ability, the interventions discourage effort. We discuss applications to the design of optimal contests in three different environments, including the design of grading contests. Assuming the value of a grade is determined by the information it reveals about the agent's ability, we establish a link between the informativeness of a grading scheme and the effort induced by it.
   			</p>
-          <button id="button-1" onclick="toggleAbstract(1)">Show abstract</button>
         </li>
         
         <li>
-          <h4>Stable allocations in discrete economies <span> <a href="files/discrete.pdf">[pdf]</a><br> (with Federico Echenique and SangMok Lee)</span></h4>
-      		<p>R&R at Journal of Economic Theory</p>
+          <p> <b>Stable allocations in discrete economies </b>  <a href="files/discrete.pdf">[pdf]</a><br> (with Federico Echenique and SangMok Lee)<br>
+      		R&R at <i>Journal of Economic Theory</i><br>
+      		<button id="button-2" onclick="toggleAbstract(2)">Show abstract</button>
+      		</p>
 
           	<p class="abstract" id="abstract-2">We study discrete allocation problems, as in the textbook notion of an exchange economy, but with indivisible goods. The problem is well-known to be difficult. The model is rich enough to encode some of the most pathological bargaining configurations in game theory, like the roommate problem. Our contribution is to show the existence of stable allocations (outcomes in the weak core, or in the bargaining set) under different sets of assumptions. Specifically, we consider dichotomous preferences, categorical economies, and discrete TU markets. The paper uses varied techniques, from Scarf's balanced games to a generalization of the TTC algorithm by means of Tarski fixed points.
 			</p>
-          <button id="button-2" onclick="toggleAbstract(2)">Show abstract</button>
         </li>
         
         <li>
-          <h4>Project selection with partially verifiable information <span><a href="files/projects.pdf">[pdf]</a><br>(with Wade Hann-Caruthers)</span></h4>
-      		<p>Extended Abstract in Proc. of <a href="https://www.cs.rpi.edu/wine2022/#accepted-papers">WINE 2022</a></p>
+          <p> <b>Project selection with partially verifiable information </b> <a href="files/projects.pdf">[pdf]</a><br>(with Wade Hann-Caruthers)<br>
+      		Extended Abstract in <i>Proc. of <a href="https://www.cs.rpi.edu/wine2022/#accepted-papers">WINE 2022</a></i><br>
+      		<button id="button-3" onclick="toggleAbstract(3)">Show abstract</button>
+      		</p>
           	<p class="abstract" id="abstract-3">We consider a principal agent project selection problem with asymmetric information. There are N projects and the principal must select exactly one of them. Each project provides some profit to the principal and some payoff to the agent and these profits and payoffs are the agent's private information. We consider the principal's problem of finding an optimal mechanism for two different objectives: maximizing expected profit and maximizing the probability of choosing the most profitable project. Importantly, we assume partial verifiability so that the agent cannot report a project to be more profitable to the principal than it actually is. Under this no-overselling constraint, we characterize the set of implementable mechanisms. Using this characterization, we find that in the case of two projects, the optimal mechanism under both objectives takes the form of a simple cutoff mechanism. The simple structure of the optimal mechanism also allows us to find evidence in support of the well-known ally-principle which says that principal delegates more authority to an agent who shares their preferences.
           	</p>
-          <button id="button-3" onclick="toggleAbstract(3)">Show abstract</button>
         </li>
     </ul>
     
     <h3>Publications</h3> 
     <ul>
         <li>
-          <h4>Optimality of the coordinate-wise median mechanism for strategyproof facility location in two dimensions <span><a href="files/median.pdf">[pdf]</a><br>(with Wade Hann-Caruthers)</span></h4>
-            <p>Extended Abstract in Proc. of <a href="https://www.essex.ac.uk/events/2022/09/11/sagt-2022">SAGT 2022</a><br>
-            Published in <a href="https://link.springer.com/article/10.1007/s00355-022-01435-1">Social Choice and Welfare</a></p>
-          	<p class="abstract" id="abstract-4">We consider the facility location problem in two dimensions. In particular, we consider a setting where agents have Euclidean preferences, defined by their ideal points, for a facility to be located in \(\mathbb{R}^2\).  We show that for the  \(p-norm\) (\(p \geq 1\)) objective, the coordinate-wise median mechanism (CM) has the lowest worst-case  approximation ratio  in the class of deterministic, anonymous, and strategyproof mechanisms. For the minisum objective and an odd number of agents \(n\), we show that CM has a worst-case approximation ratio (AR) of \(\sqrt{2}\frac{\sqrt{n^2+1}}{n+1}\). For the \(p-norm\) social cost objective (\(p\geq 2\)),  we find that the AR for CM is bounded above by \(2^{\frac{3}{2}-\frac{2}{p}}\). We conjecture that the AR of CM actually equals the lower bound \(2^{1-\frac{1}{p}}\) (as is the case for \(p=2\) and \(p=\infty\)) for any \(p\geq 2\).
+          <p> <b>Optimality of the coordinate-wise median mechanism for strategyproof facility location in two dimensions </b><a href="files/median.pdf">[pdf]</a><br>(with Wade Hann-Caruthers)<br>
+            Extended Abstract in <i>Proc. of <a href="https://www.essex.ac.uk/events/2022/09/11/sagt-2022">SAGT 2022</a></i><br>
+            Published in <i><a href="https://link.springer.com/article/10.1007/s00355-022-01435-1">Social Choice and Welfare</a></i><br>
+            <button id="button-4" onclick="toggleAbstract(4)">Show abstract</button>
+            </p>
+          	<p class="abstract" id="abstract-4">We consider the facility location problem in two dimensions. In particular, we consider a setting where agents have Euclidean preferences, defined by their ideal points, for a facility to be located in \(\mathbb{R}^2\).  We show that for the  p-norm (\(p \geq 1\)) objective, the coordinate-wise median mechanism (CM) has the lowest worst-case  approximation ratio  in the class of deterministic, anonymous, and strategyproof mechanisms. For the minisum objective and an odd number of agents \(n\), we show that CM has a worst-case approximation ratio (AR) of \(\sqrt{2}\frac{\sqrt{n^2+1}}{n+1}\). For the p-norm social cost objective (\(p\geq 2\)),  we find that the AR for CM is bounded above by \(2^{\frac{3}{2}-\frac{2}{p}}\). We conjecture that the AR of CM actually equals the lower bound \(2^{1-\frac{1}{p}}\) (as is the case for \(p=2\) and \(p=\infty\)) for any \(p\geq 2\).
 			</p>
-          <button id="button-4" onclick="toggleAbstract(4)">Show abstract</button>
         </li>
     </ul>
           
@@ -116,17 +130,17 @@
 	
 	<h3> Teaching Assistant at Caltech </h3>
 	<ul>
-	<li> Ec 122: Econometrics (<a href="https://www.hss.caltech.edu/undergraduate-studies/course-descriptions-21-22/ec-122">Fall 2018-19, Fall 2019-20</a>)
+	<li> Ec 122: Econometrics
 	</li>
-	<li> Ec 11: Introduction to Economics (<a href="https://learning.edx.org/course/course-v1:CaltechX+Ec1011x+1T2019/home">Winter 2018-19</a>)
+	<li> Ec 11: Introduction to Economics <a href="https://learning.edx.org/course/course-v1:CaltechX+Ec1011x+1T2019/home">[edX]</a>
 	</li>
-	<li> BEM 103: Introduction to finance (<a href="https://www.hss.caltech.edu/undergraduate-studies/course-descriptions-21-22/bem-103">Winter 2019-20, Winter 2021-22</a>)
+	<li> BEM 103: Introduction to finance
 	</li>
-	<li> PS/Ec 172: Game theory (<a href="http://tamuz.caltech.edu/teaching/ps172/spring2020/">Spring 2019-20</a>)
+	<li> PS/Ec 172: Game theory <a href="http://tamuz.caltech.edu/teaching/ps172/lectures.pdf">[notes]</a>
 	</li>
-	<li> Ec 121A: Theory of Value (<a href="https://www.hss.caltech.edu/undergraduate-studies/course-descriptions-21-22/ec-121-ab">Fall 2021-22</a>)
+	<li> Ec 121A: Theory of Value <a href="https://farzad-pourbabaee.github.io/Teaching/EC121a_Fall2021/EC121a_Lecture_Notes.pdf">[notes]</a>
 	</li>
-	<li> CS/Ec 149: Algorithmic Economics (<a href="https://fedors.info/tutorials/2022ec149/ec149_Fedor_Sandomirskiy_lecture_notes.pdf">Spring 2021-22</a>)
+	<li> CS/Ec 149: Algorithmic Economics <a href="https://fedors.info/tutorials/2022ec149/ec149_Fedor_Sandomirskiy_lecture_notes.pdf">[notes]</a>
 	</li>
 	</ul>
 	
