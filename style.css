@@ -25,6 +25,7 @@ header nav ul {
 /* 
   flex-wrap: wrap;
  */
+
 }
 
 header nav li {
@@ -38,8 +39,10 @@ header nav li {
 header nav a {
   color: #fff;
   text-decoration: none;
+/* 
   display: block;
   padding: 10px 0;
+ */
 }
 
 aside {
@@ -64,20 +67,20 @@ main {
 }
 
 @media (max-width: 767px) {
+  header {
+    position: static;
+  }
+
   aside {
-    position: relative;
+    position: static;
     width: 100%;
-    top: 50px;
   }
 
   main {
-    margin: 50px 0 0 0;
-  }
-
-  header nav li {
-    flex-basis: auto;
+    margin: 50px 0;
   }
 }
+
 
 h4 span {
     font-weight: normal;
