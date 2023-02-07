@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-	<title>Sumit Goel</title>
-	
-	<!-- Global site tag (gtag.js) - Google Analytics -->
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+    <script src="https://kit.fontawesome.com/fa0d550621.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-NX2T0MVJLL"></script>
 	<script>
   	window.dataLayer = window.dataLayer || [];
@@ -16,318 +16,125 @@
   	gtag('config', 'G-NX2T0MVJLL');
 	</script>
 	
-	<!-- Mathjax for Latex -->
-	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-	<style>
-	[id]::before {
-  	content: '';
-  	display: block;
-  	height:      75px;
-  	margin-top: -75px;
-  	visibility: hidden;
-	}
-	
-	/* 
-a {
-	color: blue;
-  	text-decoration: none;	
-	}
- */
+    <title>Sumit Goel</title>
+  </head>
+  
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#teaching">Teaching</a></li>
+        </ul>
+      </nav>
+    </header>
+    <aside>
+      <div class="profile-image">
+        <img src="files/sumit.jpg" alt="Profile Image">
+      </div>
+      <div class="contact-details">
+        <h3>Sumit Goel</h3>
+        <p> PhD student in Economics at the California Institute of Technology</p>
+        
+       	<h4> Contact </h4>
+ 		<p><i class="fas fa-envelope"></i> <a href="mailto:sgoel@caltech.edu">sgoel@caltech.edu</a></p>
+  		<p><i class="fas fa-phone"></i> +1 (626) 353-8184</p>
+  
+		<h4> Files </h4>
+		<p> <a href="files/CV.pdf"> CV </a></p>  
+		
+  		<h4> Social Media </h4>
+        <div class="social-media-links" align="center">
+            <a href="https://scholar.google.co.in/citations?hl=en&user=htu-rZcAAAAJ"><i class="fa fa-google"></i></a>
+            <a href="https://twitter.com/sumitgoel8"><i class="fa fa-twitter-square"></i></a>
+            <a href="https://www.linkedin.com/in/sumitgoel8/"><i class="fa fa-linkedin-square"></i></a>
+            <a href="https://github.com/sumitgoel8"><i class="fa fa-github-square"></i></a>
+        </div>
+      	</div>
+    </aside>
+    
+    
+    <main>
+    
+    <section id="home">
+    <h2>About Me</h2>
+    <p>I am a PhD student in economics at the California Institute of Technology. My research interests are in microeconomic theory and my
+	advisor is <a href="https://eml.berkeley.edu/~fechenique/index.html">Federico Echenique</a>. I am on the 2022-2023 job market.
+	</p>
+    
+    <section id="research">
+    <h2>Research</h2>
+    
+      <h3>Working papers</h3>
+      <ul>
+        <li>
+          <h4>Prizes and effort in contests with private information <br><span><a href="files/contests.pdf">[PDF]</a> </span> </h4>
+          	<p id="abstract-1" style="display:none;">We consider contests where participants have private information about their ability and the contest designer can manipulate the values of different prizes to influence effort. We study the effect on effort of two different interventions: increase in the value of prizes and increase in competition (transfer of value from worse to better prizes). We identify two natural sufficient conditions on the distribution of abilities in the population under which both interventions have opposite effects on effort. More precisely, we find that if the density of agents is decreasing in ability so that unproductive agents are more likely than productive agents, the two interventions encourage effort. And if this density is monotone increasing in ability, the interventions discourage effort. We discuss applications to the design of optimal contests in three different environments, including the design of grading contests. Assuming the value of a grade is determined by the information it reveals about the agent's ability, we establish a link between the informativeness of a grading scheme and the effort induced by it.
+  			</p>
+          <button id="button-1" onclick="toggleAbstract(1)">Show abstract</button>
+        </li>
+        
+        <li>
+          <h4>Stable allocations in discrete economies <br><span> (with Federico Echenique and SangMok Lee) <a href="files/discrete.pdf">[PDF]</a></span></h4>
+      		<p>R&R at Journal of Economic Theory</p>
 
-	</style>
-</head>
-
-<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
-
-
-<nav class="navbar-expand-sm navbar bg-dark navbar-dark fixed-top">
-  	<div class="container-fluid">
-  	<div class="navbar-header">
-      <a class="navbar-brand" href="https://www.goelsumit.com/">Sumit Goel</a>
-	</div>
-	<button class="navbar-toggler" type="button" data-bs-toggle="collapse"  data-bs-target="#collapsibleNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="#Home">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#Research">Research</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#Teaching">Teaching</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#Contact">Contact</a>
-      </li>
+          	<p id="abstract-2" style="display:none;">We study discrete allocation problems, as in the textbook notion of an exchange economy, but with indivisible goods. The problem is well-known to be difficult. The model is rich enough to encode some of the most pathological bargaining configurations in game theory, like the roommate problem. Our contribution is to show the existence of stable allocations (outcomes in the weak core, or in the bargaining set) under different sets of assumptions. Specifically, we consider dichotomous preferences, categorical economies, and discrete TU markets. The paper uses varied techniques, from Scarf's balanced games to a generalization of the TTC algorithm by means of Tarski fixed points.
+			</p>
+          <button id="button-2" onclick="toggleAbstract(2)">Show abstract</button>
+        </li>
+        
+        <li>
+          <h4>Project selection with partially verifiable information<br><span>(with Wade Hann-Caruthers) <a href="files/projects.pdf">[PDF]</a></span></h4>
+      		<p>Extended Abstract in Proc. of <a href="https://www.cs.rpi.edu/wine2022/#accepted-papers">WINE 2022</a></p>
+          	<p id="abstract-3" style="display:none;">We consider a principal agent project selection problem with asymmetric information. There are N projects and the principal must select exactly one of them. Each project provides some profit to the principal and some payoff to the agent and these profits and payoffs are the agent's private information. We consider the principal's problem of finding an optimal mechanism for two different objectives: maximizing expected profit and maximizing the probability of choosing the most profitable project. Importantly, we assume partial verifiability so that the agent cannot report a project to be more profitable to the principal than it actually is. Under this no-overselling constraint, we characterize the set of implementable mechanisms. Using this characterization, we find that in the case of two projects, the optimal mechanism under both objectives takes the form of a simple cutoff mechanism. The simple structure of the optimal mechanism also allows us to find evidence in support of the well-known ally-principle which says that principal delegates more authority to an agent who shares their preferences.
+          	</p>
+          <button id="button-3" onclick="toggleAbstract(3)">Show abstract</button>
+        </li>
     </ul>
-  	</div>
-</nav>
+    
+    <h3>Publications</h3> 
+    <ul>
+        <li>
+          <h4>Optimality of the coordinate-wise median mechanism for strategyproof facility location in two dimensions<br><span>(with Wade Hann-Caruthers) <a href="files/median.pdf">[PDF]</a></span></h4>
+            <p>Extended Abstract in Proc. of <a href="https://www.essex.ac.uk/events/2022/09/11/sagt-2022">SAGT 2022</a><br>
+            Published in <a href="https://link.springer.com/article/10.1007/s00355-022-01435-1">Social Choice and Welfare</a></p>
+          	<p id="abstract-4" style="display:none;">We consider the facility location problem in two dimensions. In particular, we consider a setting where agents have Euclidean preferences, defined by their ideal points, for a facility to be located in \(\mathbb{R}^2\).  We show that for the  \(p-norm\) (\(p \geq 1\)) objective, the coordinate-wise median mechanism (CM) has the lowest worst-case  approximation ratio  in the class of deterministic, anonymous, and strategyproof mechanisms. For the minisum objective and an odd number of agents \(n\), we show that CM has a worst-case approximation ratio (AR) of \(\sqrt{2}\frac{\sqrt{n^2+1}}{n+1}\). For the \(p-norm\) social cost objective (\(p\geq 2\)),  we find that the AR for CM is bounded above by \(2^{\frac{3}{2}-\frac{2}{p}}\). We conjecture that the AR of CM actually equals the lower bound \(2^{1-\frac{1}{p}}\) (as is the case for \(p=2\) and \(p=\infty\)) for any \(p\geq 2\).
+			</p>
+          <button id="button-4" onclick="toggleAbstract(4)">Show abstract</button>
+        </li>
+    </ul>
+          
+    </section>
 
-<div class="container mt-5 pt-2 col-sm-8" id="Home">
-<img src="files/sumit.jpg" class="rounded-circle mx-auto d-block img-fluid mt-4" alt="Sumit Goel" style="width:35%">
-
-<h3> Sumit Goel </h3>
-<p>I am a PhD student in economics at California Institute of Technology. My research interests are in microeconomic theory and my
-advisor is <a href="https://eml.berkeley.edu/~fechenique/index.html">Federico Echenique</a>. I am on the 2022-2023 job market. Here is my <a href="files/CV.pdf">CV</a>.
-</p>
-</div>
-
-<div class="container mt-5 col-sm-8" id="Research">
-	<h3> Research </h3>
-	<h5 class="mt-3"> Working papers </h5>
-
-
-	<ul>
-
-	<li class="mt-2">
-    <h6 class="d-inline">"Prizes and effort in contests with private information"</h6>
-    <br>
-    <i>Best micro paper award at <a href="http://econdse.org/winter-school-2022/">DSE Winter School 2022</a></i><br>
-
-    <!--<input type="button" onclick="location.href='https://arxiv.org/abs/2202.04706';" value="arXiv" /> -->
-    <a href="files/contests.pdf" class="btn btn-light btn-sm mt-2">PDF</a>
-    <button type="button" class="btn btn-light btn-sm mt-2" data-bs-toggle="collapse" data-bs-target="#contests">Abstract</button>
-	<div id="contests" class="collapse">
-  	<p class="mt-2 bg-light">We consider contests where participants have private information about their ability and the contest designer can manipulate the values of different prizes to influence effort. We study the effect on effort of two different interventions: increase in the value of prizes and increase in competition (transfer of value from worse to better prizes). We identify two natural sufficient conditions on the distribution of abilities in the population under which both interventions have opposite effects on effort. More precisely, we find that if the density of agents is decreasing in ability so that unproductive agents are more likely than productive agents, the two interventions encourage effort. And if this density is monotone increasing in ability, the interventions discourage effort. We discuss applications to the design of optimal contests in three different environments, including the design of grading contests. Assuming the value of a grade is determined by the information it reveals about the agent's ability, we establish a link between the informativeness of a grading scheme and the effort induced by it.
-  	</p>
-  
-	</div>
-	</li>
-	
-	<li class="mt-2">
-    <h6 class="d-inline">"Stable allocations in discrete economies"</h6>
-    (with <a href="https://eml.berkeley.edu/~fechenique/index.html">Federico Echenique</a> and <a href="https://sangmok81.github.io/website/">SangMok Lee</a>)<br>
-    <!--<input type="button" onclick="location.href='https://arxiv.org/abs/2202.04706';" value="arXiv" /> -->
-    <i> R&R at Journal of Economic Theory </i> <br>
-
-    <a href="files/discrete.pdf" class="btn btn-light btn-sm mt-2">PDF</a>
-    <button type="button" class="btn btn-light btn-sm mt-2" data-bs-toggle="collapse" data-bs-target="#discrete">Abstract</button>
-	<div id="discrete" class="collapse">
-  	<p class="mt-2 bg-light">We study discrete allocation problems, as in the textbook notion of an exchange economy, but with indivisible goods. The problem is well-known to be difficult. The model is rich enough to encode some of the most pathological bargaining configurations in game theory, like the roommate problem. Our contribution is to show the existence of stable allocations (outcomes in the weak core, or in the bargaining set) under different sets of assumptions. Specifically, we consider dichotomous preferences, categorical economies, and discrete TU markets. The paper uses varied techniques, from Scarf's balanced games to a generalization of the TTC algorithm by means of Tarski fixed points.
-	
-	</p>
-  	
-	</div>
-	</li>
-	
-	
-	<li class="mt-2">
-    <h6 class="d-inline">"Project selection with partially verifiable information"</h6>
-    (with <a href="https://www.its.caltech.edu/~whanncar/">Wade Hann-Caruthers</a>)<br>
-    <i> Extended Abstract in Proc. of <a href="https://www.cs.rpi.edu/wine2022/#accepted-papers">WINE 2022</a></i> <br>
-    <a href="files/projects.pdf" class="btn btn-light btn-sm mt-2">PDF</a>
-    <button type="button" class="btn btn-light btn-sm mt-2" data-bs-toggle="collapse" data-bs-target="#projects">Abstract</button>
-	<div id="projects" class="collapse">
-  	<p class="mt-2 bg-light">We consider a principal agent project selection problem with asymmetric information. There are N projects and the principal must select exactly one of them. Each project provides some profit to the principal and some payoff to the agent and these profits and payoffs are the agent's private information. We consider the principal's problem of finding an optimal mechanism for two different objectives: maximizing expected profit and maximizing the probability of choosing the most profitable project. Importantly, we assume partial verifiability so that the agent cannot report a project to be more profitable to the principal than it actually is. Under this no-overselling constraint, we characterize the set of implementable mechanisms. Using this characterization, we find that in the case of two projects, the optimal mechanism under both objectives takes the form of a simple cutoff mechanism. The simple structure of the optimal mechanism also allows us to find evidence in support of the well-known ally-principle which says that principal delegates more authority to an agent who shares their preferences.
-	
-	</p>
-  	
-	</div>
-	</li>
-	</ul>
-		<h5 class="mt-3"> Publications </h5>
-
-	<ul>
-
-	<li class="mt-2">
-    <h6 class="d-inline">"Optimality of the coordinate-wise median mechanism for strategyproof facility location in two dimensions"</h6>
-    (with <a href="https://www.its.caltech.edu/~whanncar/">Wade Hann-Caruthers</a>)<br>
-    <i>Extended Abstract in Proc. of <a href="https://www.essex.ac.uk/events/2022/09/11/sagt-2022">SAGT 2022</i></a> <br>
-    <i>Published in <a href="https://link.springer.com/article/10.1007/s00355-022-01435-1">Social Choice and Welfare</a> </i><br>
-    <a href="files/median.pdf" class="btn btn-light btn-sm mt-2">PDF</a>
-    <button type="button" class="btn btn-light btn-sm mt-2" data-bs-toggle="collapse" data-bs-target="#median1">Abstract</button>
-	<div id="median1" class="collapse">
-  	<p class="mt-2 bg-light">We consider the facility location problem in two dimensions. In particular, we consider a setting where agents have Euclidean preferences, defined by their ideal points, for a facility to be located in \(\mathbb{R}^2\).  We show that for the  \(p-norm\) (\(p \geq 1\)) objective, the coordinate-wise median mechanism (CM) has the lowest worst-case  approximation ratio  in the class of deterministic, anonymous, and strategyproof mechanisms. For the minisum objective and an odd number of agents \(n\), we show that CM has a worst-case approximation ratio (AR) of \(\sqrt{2}\frac{\sqrt{n^2+1}}{n+1}\). For the \(p-norm\) social cost objective (\(p\geq 2\)),  we find that the AR for CM is bounded above by \(2^{\frac{3}{2}-\frac{2}{p}}\). We conjecture that the AR of CM actually equals the lower bound \(2^{1-\frac{1}{p}}\) (as is the case for \(p=2\) and \(p=\infty\)) for any \(p\geq 2\).
-	
-	</p>
-  
-	</div>
-	</li>
-	
-	
-	<!-- 
-<li class="mt-2">
-    <h6 class="d-inline">"Project selection with partially verifiable information"</h6>
-    (with <a href="https://www.its.caltech.edu/~whanncar/">Wade Hann-Caruthers</a>)<br>
-<!~~ 
-    <i><a href="https://www.cs.rpi.edu/wine2022/#accepted-papers">WINE 2022</a></i><br>
- ~~>
-    <!~~<input type="button" onclick="location.href='https://arxiv.org/abs/2202.04706';" value="arXiv" /> ~~>
-    <a href="files/projects.pdf" class="btn btn-light btn-sm mt-2">PDF</a>
-    <button type="button" class="btn btn-light btn-sm mt-2" data-bs-toggle="collapse" data-bs-target="#projects1">Abstract</button>
-	<div id="projects1" class="collapse">
-  	<font size=2><p class="mt-2 bg-light">We consider a principal agent project selection problem with asymmetric information. There are N projects and the principal must select exactly one of them. Each project provides some profit to the principal and some payoff to the agent and these profits and payoffs are the agent's private information. We consider the principal's problem of finding an optimal mechanism for two different objectives: maximizing expected profit and maximizing the probability of choosing the most profitable project. Importantly, we assume partial verifiability so that the agent cannot report a project to be more profitable to the principal than it actually is. Under this no-overselling constraint, we characterize the set of implementable mechanisms. Using this characterization, we find that in the case of two projects, the optimal mechanism under both objectives takes the form of a simple cutoff mechanism. The simple structure of the optimal mechanism also allows us to find evidence in support of the well-known ally-principle which says that principal delegates more authority to an agent who shares their preferences.
-	
-	
-	</p>
-  	</font>
-	</div>
-	</li>
- -->
-	</ul>
-	
-	<!-- 
-<h5 class="mt-3"> Publications </h5>
-	<ul>
-	<li class="mt-2">
-    <h6 class="d-inline">"Optimality of the coordinate-wise median mechanism for strategyproof facility location in two dimensions"</h6>
-    (with <a href="https://www.its.caltech.edu/~whanncar/">Wade Hann-Caruthers</a>)<br>
-    <i><a href="https://link.springer.com/article/10.1007/s00355-022-01435-1">Social Choice and Welfare</i></a><br>
-    <!~~<input type="button" onclick="location.href='https://arxiv.org/abs/2202.04706';" value="arXiv" /> ~~>
-    <a href="files/median.pdf" class="btn btn-light btn-sm mt-2">PDF</a>
-    <button type="button" class="btn btn-light btn-sm mt-2" data-bs-toggle="collapse" data-bs-target="#median2">Abstract</button>
-	<div id="median2" class="collapse">
-  	<font size=2><p class="mt-2 bg-light">We consider the facility location problem in two dimensions. In particular, we consider a setting where agents have Euclidean preferences, defined by their ideal points, for a facility to be located in \(\mathbb{R}^2\).  We show that for the  \(p-norm\) (\(p \geq 1\)) objective, the coordinate-wise median mechanism (CM) has the lowest worst-case  approximation ratio  in the class of deterministic, anonymous, and strategyproof mechanisms. For the minisum objective and an odd number of agents \(n\), we show that CM has a worst-case approximation ratio (AR) of \(\sqrt{2}\frac{\sqrt{n^2+1}}{n+1}\). For the \(p-norm\) social cost objective (\(p\geq 2\)),  we find that the AR for CM is bounded above by \(2^{\frac{3}{2}-\frac{2}{p}}\). We conjecture that the AR of CM actually equals the lower bound \(2^{1-\frac{1}{p}}\) (as is the case for \(p=2\) and \(p=\infty\)) for any \(p\geq 2\).
-	
-	</p>
-  	</font>
-	</div>
-	</li>
-	</ul>
- -->
-	
-	
-	<!-- 
-<h5 class="mt-3"> Refereed Conference Proceedings (Computer Science) </h5>
-
-	<ul>
-	<li class="mt-2">
-    <h6 class="d-inline">"Project selection with partially verifiable information"</h6>
-    (with <a href="https://www.its.caltech.edu/~whanncar/">Wade Hann-Caruthers</a>)<br>
-    <i><a href="https://www.cs.rpi.edu/wine2022/#accepted-papers">WINE 2022</a></i> (Ext. Abs.) <br>
-    <!~~<input type="button" onclick="location.href='https://arxiv.org/abs/2202.04706';" value="arXiv" /> ~~>
-    <a href="files/projects.pdf" class="btn btn-light btn-sm mt-2">PDF</a>
-    <button type="button" class="btn btn-light btn-sm mt-2" data-bs-toggle="collapse" data-bs-target="#projects">Abstract</button>
-	<div id="projects" class="collapse">
-  	<font size=2><p class="mt-2 bg-light">We consider a principal agent project selection problem with asymmetric information. There are N projects and the principal must select exactly one of them. Each project provides some profit to the principal and some payoff to the agent and these profits and payoffs are the agent's private information. We consider the principal's problem of finding an optimal mechanism for two different objectives: maximizing expected profit and maximizing the probability of choosing the most profitable project. Importantly, we assume partial verifiability so that the agent cannot report a project to be more profitable to the principal than it actually is. Under this no-overselling constraint, we characterize the set of implementable mechanisms. Using this characterization, we find that in the case of two projects, the optimal mechanism under both objectives takes the form of a simple cutoff mechanism. The simple structure of the optimal mechanism also allows us to find evidence in support of the well-known ally-principle which says that principal delegates more authority to an agent who shares their preferences.
-	
-	</p>
-  	</font>
-	</div>
-	</li>
-	
-	<li class="mt-2">
-    <h6 class="d-inline">"Optimality of the coordinate-wise median mechanism for strategyproof facility location in two dimensions"</h6>
-    (with <a href="https://www.its.caltech.edu/~whanncar/">Wade Hann-Caruthers</a>)<br>
-    <i><a href="https://www.essex.ac.uk/events/2022/09/11/sagt-2022">SAGT 2022</i></a> (Ext. Abs.) <br>
-    <!~~<input type="button" onclick="location.href='https://arxiv.org/abs/2202.04706';" value="arXiv" /> ~~>
-    <a href="files/median.pdf" class="btn btn-light btn-sm mt-2">PDF</a>
-    <button type="button" class="btn btn-light btn-sm mt-2" data-bs-toggle="collapse" data-bs-target="#median1">Abstract</button>
-	<div id="median1" class="collapse">
-  	<font size=2><p class="mt-2 bg-light">We consider the facility location problem in two dimensions. In particular, we consider a setting where agents have Euclidean preferences, defined by their ideal points, for a facility to be located in \(\mathbb{R}^2\).  We show that for the  \(p-norm\) (\(p \geq 1\)) objective, the coordinate-wise median mechanism (CM) has the lowest worst-case  approximation ratio  in the class of deterministic, anonymous, and strategyproof mechanisms. For the minisum objective and an odd number of agents \(n\), we show that CM has a worst-case approximation ratio (AR) of \(\sqrt{2}\frac{\sqrt{n^2+1}}{n+1}\). For the \(p-norm\) social cost objective (\(p\geq 2\)),  we find that the AR for CM is bounded above by \(2^{\frac{3}{2}-\frac{2}{p}}\). We conjecture that the AR of CM actually equals the lower bound \(2^{1-\frac{1}{p}}\) (as is the case for \(p=2\) and \(p=\infty\)) for any \(p\geq 2\).
-	
-	</p>
-  	</font>
-	</div>
-	</li>
-	</ul>
- -->
-
-	
-	
-	
-</div>
-
-<div class="container mt-5 col-sm-8" id="Teaching">
-	<h3> Teaching </h3>
-	<h5 class="mt-3"> Instructor at Econschool </h5>
-	<p> <a href="https://www.econschool.in/">Econschool</a> is an initiative to assist undergraduate students in India who wish 
+    <section id="teaching">
+    <h2>Teaching</h2>
+    <h3>Instructor at Econschool</h3>
+    <p> <a href="https://www.econschool.in/">Econschool</a> is an initiative to assist undergraduate students in India who wish 
 	to pursue higher studies in Economics. As an instructor, I've taught a course on mathematics for economists and also helped with the development and delivery of various online resources. 
 	</p>
-	<h5 class="mt-3"> Teaching Assistant at Caltech </h5>
+	
+	<h3> Teaching Assistant at Caltech </h3>
 	<ul>
-	<li class="mt-2"> Ec 122: Econometrics (<a href="https://www.hss.caltech.edu/undergraduate-studies/course-descriptions-21-22/ec-122">Fall 2018-19, Fall 2019-20</a>)
+	<li> Ec 122: Econometrics (<a href="https://www.hss.caltech.edu/undergraduate-studies/course-descriptions-21-22/ec-122">Fall 2018-19, Fall 2019-20</a>)
 	</li>
-	<li class="mt-2"> Ec 11: Introduction to Economics (<a href="https://learning.edx.org/course/course-v1:CaltechX+Ec1011x+1T2019/home">Winter 2018-19</a>)
+	<li> Ec 11: Introduction to Economics (<a href="https://learning.edx.org/course/course-v1:CaltechX+Ec1011x+1T2019/home">Winter 2018-19</a>)
 	</li>
-	<li class="mt-2"> BEM 103: Introduction to finance (<a href="https://www.hss.caltech.edu/undergraduate-studies/course-descriptions-21-22/bem-103">Winter 2019-20, Winter 2021-22</a>)
+	<li> BEM 103: Introduction to finance (<a href="https://www.hss.caltech.edu/undergraduate-studies/course-descriptions-21-22/bem-103">Winter 2019-20, Winter 2021-22</a>)
 	</li>
-	<li class="mt-2"> PS/Ec 172: Game theory (<a href="http://tamuz.caltech.edu/teaching/ps172/spring2020/">Spring 2019-20</a>)
+	<li> PS/Ec 172: Game theory (<a href="http://tamuz.caltech.edu/teaching/ps172/spring2020/">Spring 2019-20</a>)
 	</li>
-	<li class="mt-2"> Ec 121A: Theory of Value (<a href="https://www.hss.caltech.edu/undergraduate-studies/course-descriptions-21-22/ec-121-ab">Fall 2021-22</a>)
+	<li> Ec 121A: Theory of Value (<a href="https://www.hss.caltech.edu/undergraduate-studies/course-descriptions-21-22/ec-121-ab">Fall 2021-22</a>)
 	</li>
-	<li class="mt-2"> CS/Ec 149: Algorithmic Economics (<a href="https://fedors.info/tutorials/2022ec149/ec149_Fedor_Sandomirskiy_lecture_notes.pdf">Spring 2021-22</a>)
+	<li> CS/Ec 149: Algorithmic Economics (<a href="https://fedors.info/tutorials/2022ec149/ec149_Fedor_Sandomirskiy_lecture_notes.pdf">Spring 2021-22</a>)
 	</li>
 	</ul>
-</div>
+	
+    </section>
+    </main>
+    <footer>
+  	<p>&copy; 2023 Sumit Goel</p>
+	</footer>
 
-
-<div class="container mt-5 col-sm-8" id="Contact">
-	<h3>Contact information</h3>
-    <h5 class="mt-3">Address</h5>
-    Sumit Goel <br>
-    Division of the Humanities and Social Sciences <br>
-    Mail Code 228-77 <br>
-    California Institute of Technology <br>
-    Pasadena, CA 91125
-    <h5 class="mt-3">Office</h5>
-    218 Baxter Hall
-    <h5 class="mt-3">Email</h5>
-    <a href="mailto:sgoel@caltech.edu">sgoel@caltech.edu</a>
-    <h5 class="mt-3">Phone</h5>
-    +1 (626) 353-8184
-    <!-- 
-<h5 class="mt-3">Phone</h5>
-    sgoel [at] caltech [dot] edu
- -->
-</div>
-
-<!-- 
-<div class="mt-5 p-5 bg-dark text-white text-center">
-  <p></p>
-</div>
- -->
- 
-<footer class="bg-dark text-center text-white mt-5 p-5">
-   <!-- Grid container -->
-   <div class="container p-4 pb-0">
-	 <!-- Section: Social media -->
-	 <section class="mb-4">
-	   <!-- Facebook -->
-	  
-	   <!-- Twitter -->
-	   <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/sumitgoel8" role="button"
-		  ><i class="fa fa-twitter"></i
-		 ></a>
-
-	   <!-- Google -->
-	   <a class="btn btn-outline-light btn-floating m-1" href="https://scholar.google.co.in/citations?hl=en&user=htu-rZcAAAAJ" role="button"
-		  ><i class="fa fa-google"></i
-		 ></a>
-
-	   <!-- Linkedin -->
-	   <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/sumitgoel8/" role="button"
-		  ><i class="fa fa-linkedin"></i
-		 ></a>
-
-	   <!-- Github -->
-	   <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/sumitgoel8" role="button"
-		  ><i class="fa fa-github"></i
-		 ></a>
-	 </section>
-	 <!-- Section: Social media -->
-   </div>
-   <!-- Grid container -->
-
-   <!-- Copyright -->
-   <!-- 
-<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-	 © 2022 Copyright:
-	 <a class="text-white" href="https://mdbootstrap.com/">goelsumit.com</a>
-   </div>
- -->
-   <!-- Copyright -->
- </footer>
-
-
-
-</body>
-
+  </body>
 </html>
