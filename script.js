@@ -15,10 +15,10 @@ function toggleAbstract(id) {
   const button = document.getElementById(`button-${id}`);
   if (abstract.style.display === "block") {
     abstract.style.display = "none";
-    button.innerHTML = "Show abstract";
+    button.innerHTML = "Abstract +";
   } else {
     abstract.style.display = "block";
-    button.innerHTML = "Hide abstract";
+    button.innerHTML = "Abstract -";
   }
 }
 
