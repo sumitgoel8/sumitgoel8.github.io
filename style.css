@@ -1,6 +1,8 @@
 body {
   margin: 0;
   padding: 0;
+  padding-top: 60px;
+  padding-bottom: 60px; /* Adjust this value based on the height of the footer */
   font-family: 'Roboto', Arial, sans-serif;
   background-color: #fff;
 }
@@ -10,6 +12,11 @@ header {
   color: #fff;
   padding: 10px;
   text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensures the header stays on top */
 }
 
 header nav ul {
@@ -83,8 +90,12 @@ footer {
   color: #fff;
   padding: 10px;
   text-align: center;
-  z-index: 2;
   margin-top: 20px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensures the footer stays on top */
 }
 
 /* Add the following code to your styles.css file */
