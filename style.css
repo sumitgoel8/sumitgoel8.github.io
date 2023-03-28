@@ -1,20 +1,15 @@
-/* 
-<link rel="stylesheet" href="https://kit.fontawesome.com/fa0d550621.css" crossorigin="anonymous">
-
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
+  background-color: #fff;
 }
 
 header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
   background-color: #333;
   color: #fff;
   padding: 10px;
+  text-align: center;
 }
 
 header nav ul {
@@ -34,47 +29,22 @@ header nav a {
   text-decoration: none;
 }
 
-aside {
-  position: fixed;
-  top: 50px;
-  bottom: 0;
-  left: 0;
-  width: 200px;
-  background-color: #ddd;
-  padding: 10px;
+.profile {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .profile-image img {
-  width: 100%;
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
 }
 
-
-
-main {
-  margin: 50px 0 0 200px;
-  padding: 20px 50px;
+.contact-details {
+  text-align: center;
 }
-
-@media (max-width: 767px) {
-  header {
-    position: static;
-  }
-
-  aside {
-    position: static;
-    width: 100%;
-  }
-
-  main {
-    margin: 20px 0;
-    padding: 10px 20px;
-  }
-}
-
-section h2 {
-  margin-top: 30px;
-}
-
 
 .social-media-links a {
   display: inline-block;
@@ -88,14 +58,15 @@ section h2 {
   color: #fff;
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-    z-index: 2
+main {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 20px;
 }
 
+section h2 {
+  margin-top: 30px;
+}
 
 .abstract {
   display: none;
@@ -103,105 +74,8 @@ footer {
   padding: 10px;
 }
 
-
 a {
   text-decoration: none;
-}
- */
- 
- 
-<link rel="stylesheet" href="https://kit.fontawesome.com/fa0d550621.css" crossorigin="anonymous">
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Roboto', Arial, sans-serif;
-  line-height: 1.6;
-  background-color: #f4f4f4;
-}
-
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
-  z-index: 100;
-}
-
-header nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-}
-
-header nav li {
-  margin: 0 10px;
-}
-
-header nav a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 18px;
-}
-
-aside {
-  position: fixed;
-  top: 50px;
-  bottom: 0;
-  left: 0;
-  width: 200px;
-  background-color: #ddd;
-  padding: 10px;
-}
-
-.profile-image img {
-  width: 100%;
-  border-radius: 50%;
-  margin-bottom: 15px;
-}
-
-main {
-  margin: 50px 0 0 200px;
-  padding: 20px 50px;
-}
-
-@media (max-width: 767px) {
-  header {
-    position: static;
-  }
-
-  aside {
-    position: static;
-    width: 100%;
-  }
-
-  main {
-    margin: 20px 0;
-    padding: 10px 20px;
-  }
-}
-
-section h2 {
-  margin-top: 30px;
-  font-size: 24px;
-  font-weight: 500;
-}
-
-.social-media-links a {
-  display: inline-block;
-  margin-right: 10px;
-  font-size: 20px;
-  color: #333;
-  transition: all 0.2s ease-in-out;
-}
-
-.social-media-links a:hover {
-  color: #fff;
 }
 
 footer {
@@ -210,19 +84,15 @@ footer {
   padding: 10px;
   text-align: center;
   z-index: 2;
+  margin-top: 20px;
 }
 
-.abstract {
-  display: none;
-  background-color: #E5E4E2;
+/* Add the following code to your styles.css file */
+
+.profile-container {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
   padding: 10px;
-  border-radius: 5px;
-  margin-bottom: 15px;
 }
-
-a {
-  text-decoration: none;
-}
-
-
 
