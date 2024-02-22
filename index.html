@@ -78,17 +78,19 @@
       	<li>
           	<p> <b>Multi-agent contract design with independent trials: Winners-take-all based on weight and priority </b><br>
           	(with Wade Hann-Caruthers)<br>
-          	<button id="button-6" onclick="toggleAbstract(6)">Abstract +</button>  
+          	<button id="button-6" onclick="toggleAbstract(6)">Abstract +</button>  <button><a href="files/multiagent_contracts.pdf">PDF</a></button>
         	</p>
            
-          	<p class="abstract" id="abstract-6">We study a contract design problem between a principal and multiple agents. Each agent participates in an independent task, in which it may succeed or fail. The principal, who we assume has a fixed budget, can design a contract mapping observable outcomes to transfers for each agent, so as to incentivize the agents to expend effort into increasing their probability of success. We show that the Pareto frontier of success probabilities that can be sustained in equilibrium is characterized by equilibria of priority-based weighted contracts. These are contracts defined by a priority relation on the agents and a weight for each agent so that the entire budget is split among the highest-priority agents who are successful, with each agent's share proportional to her weight. The result provides a significant reduction in the dimensionality of the optimal contract design problem. We discuss application to the design of optimal contracts with two agents and our result for this case suggests that the structure of optimal contract depends more on the bias in principal's objective than on the heterogeneity of the agents.
-        </li>
+          	<p class="abstract" id="abstract-6">We study a contract design problem between a principal and multiple agents. Each agent participates in an independent task with binary outcomes (success or failure), in which it may exert costly effort towards improving its probability of success, and the principal has a fixed budget which it can use to provide outcome-dependent rewards to the agents. Crucially, each agent's reward may depend not only on whether she succeeds or fails, but also on whether other agents succeed or fail, and we assume the principal cares only about maximizing the agents' probabilities of success, not how much of the budget it expends.<br>
+We first show that a contract is optimal for some objective if and only if it gives no reward to unsuccessful agents and always splits the entire budget among the successful agents. An immediate consequence of this result is that piece-rate contracts and bonus-pool contracts, two types of contracts which are well-studied and motivated in the literature on multi-agent contract design, are never optimal in this setting. We then show that for any objective, there is an optimal \textit{priority-based weighted} contract, which assigns positive weights and priority levels to the agents, and splits the budget among the highest-priority successful agents, with each such agent receiving a fraction of the budget proportional to her weight. This result provides a significant reduction in the dimensionality of the principal's optimal contract design problem and gives an interpretable and easily implementable optimal contract. <br>
+Finally, we discuss an application of our results to the design of optimal contracts with two agents and quadratic costs. In this context, we find that the optimal contract assigns a higher weight to the agent whose success it values more, irrespective of the heterogeneity in the agents' cost parameters. This suggests that the structure of the optimal contract depends primarily on the bias in the principal's objective and is, to some extent, robust to the heterogeneity in the agents' cost functions.
+		</li>
               
         <li>
           	<p> <b>Optimal grading contests </b><br>
           	Best paper award at <i><a href="https://www.youtube.com/watch?v=00erEBZms-s&list=LL&index=4&t=194s">Delhi Winter School 2022</a></i><br>
           	Ext. abst. in  <i><a href="https://doi.org/10.1145/3580507.3597670">Proc. of EC 2023</a></i><br>
-          	<button id="button-5" onclick="toggleAbstract(5)">Abstract +</button> <button><a href="files/contests.pdf">PDF</a></button> 
+          	<button id="button-5" onclick="toggleAbstract(5)">Abstract +</button> <button><a href="files/contests_grading.pdf">PDF</a></button> 
         	</p>
            
           	<p class="abstract" id="abstract-5">We study the design of grading contests between agents with private information about their abilities under the assumption that the value of a grade is determined by the information it reveals about the agent’s productivity. Towards the goal of identifying the effort-maximizing grading contest, we study the effect of increasing prizes and increasing competition on effort and find that the effects depend qualitatively on the distribution of abilities in the population. Consequently, while the optimal grading contest always uniquely identifies the best performing agent, it may want to pool or separate the remaining agents depending upon the distribution. We identify sufficient conditions under which a rank-revealing grading contest, a leaderboard-with-cutoff type grading contest, and a coarse grading contest with at most three grades are optimal. In the process, we also identify distributions under which there is a monotonic relationship between the informativeness of a grading scheme and the effort induced by it.
@@ -100,7 +102,7 @@
           	(with Federico Echenique and SangMok Lee)<br>
       		R&R at <i>Journal of Economic Theory</i><br>
       		
-      		<button id="button-4" onclick="toggleAbstract(4)">Abstract +</button> 	<button><a href="files/discrete.pdf">PDF</a></button>
+      		<button id="button-4" onclick="toggleAbstract(4)">Abstract +</button> 	<button><a href="files/exchange_stable.pdf">PDF</a></button>
       		</p>
 
           	<p class="abstract" id="abstract-4">We study discrete allocation problems, as in the textbook notion of an exchange economy, but with indivisible goods. The problem is well-known to be difficult. The model is rich enough to encode some of the most pathological bargaining configurations in game theory, like the roommate problem. Our contribution is to show the existence of stable allocations (outcomes in the weak core, or in the bargaining set) under different sets of assumptions. Specifically, we consider dichotomous preferences, categorical economies, and discrete TU markets. The paper uses varied techniques, from Scarf's balanced games to a generalization of the TTC algorithm by means of Tarski fixed points.
@@ -112,7 +114,7 @@
           	(with Wade Hann-Caruthers)<br>
       		Ext. abst. in <i><a href="https://doi.org/10.1007/978-3-031-22832-2">Proc. of WINE 2022</a></i><br>
       		
-      		<button id="button-3" onclick="toggleAbstract(3)">Abstract +</button> <button><a href="files/projects.pdf">PDF</a></button>
+      		<button id="button-3" onclick="toggleAbstract(3)">Abstract +</button> <button><a href="files/mechdesign_projects.pdf">PDF</a></button>
       		</p>
       		
           	<p class="abstract" id="abstract-3">We consider a principal agent project selection problem with asymmetric information. There are N projects and the principal must select exactly one of them. Each project provides some profit to the principal and some payoff to the agent and these profits and payoffs are the agent's private information. We consider the principal's problem of finding an optimal mechanism for two different objectives: maximizing expected profit and maximizing the probability of choosing the most profitable project. Importantly, we assume partial verifiability so that the agent cannot report a project to be more profitable to the principal than it actually is. Under this no-overselling constraint, we characterize the set of implementable mechanisms. Using this characterization, we find that in the case of two projects, the optimal mechanism under both objectives takes the form of a simple cutoff mechanism. The simple structure of the optimal mechanism also allows us to find evidence in support of the well-known ally-principle which says that principal delegates more authority to an agent who shares their preferences.
@@ -127,7 +129,7 @@
           	(with Amit Goyal)<br>
           	Published in <i><a href="https://doi.org/10.1016/j.jmateco.2023.102872">Journal of Mathematical Economics</a></i><br>
 
-          	<button id="button-2" onclick="toggleAbstract(2)">Abstract +</button> <button><a href="files/tie_break.pdf">PDF</a></button>
+          	<button id="button-2" onclick="toggleAbstract(2)">Abstract +</button> <button><a href="files/contests_tiebreak.pdf">PDF</a></button>
         	</p>
            
           	<p class="abstract" id="abstract-2">We consider two-player contests with the possibility of ties and study the effect of different tie-breaking rules on effort. For ratio-form and difference-form contests that admit pure-strategy Nash equilibrium, we find that the effort of both players is monotone decreasing in the probability that ties are broken in favor of the stronger player. Thus, the effort-maximizing tie-breaking rule commits to breaking ties in favor of the weaker agent. With symmetric agents, we find that the equilibrium is generally symmetric and independent of the tie-breaking rule. We also study the design of random tie-breaking rules that are unbiased ex-ante and identify sufficient conditions under which breaking ties before the contest actually leads to greater expected effort than the more commonly observed practice of breaking ties after the contest.
@@ -139,7 +141,7 @@
             Ext. abst. in <i><a href="https://doi.org/10.1007/978-3-031-15714-1">Proc. of SAGT 2022</a></i><br>
             Published in <i><a href="https://doi.org/10.1007/s00355-022-01435-1">Social Choice and Welfare</a></i><br>
             
-            <button id="button-1" onclick="toggleAbstract(1)">Abstract +</button> <button><a href="files/median.pdf">PDF</a></button>
+            <button id="button-1" onclick="toggleAbstract(1)">Abstract +</button> <button><a href="files/mechdesign_facility.pdf">PDF</a></button>
             </p>
             
           	<p class="abstract" id="abstract-1">We consider the facility location problem in two dimensions. In particular, we consider a setting where agents have Euclidean preferences, defined by their ideal points, for a facility to be located in \(\mathbb{R}^2\).  We show that for the  p-norm (\(p \geq 1\)) objective, the coordinate-wise median mechanism (CM) has the lowest worst-case  approximation ratio  in the class of deterministic, anonymous, and strategyproof mechanisms. For the minisum objective and an odd number of agents \(n\), we show that CM has a worst-case approximation ratio (AR) of \(\sqrt{2}\frac{\sqrt{n^2+1}}{n+1}\). For the p-norm social cost objective (\(p\geq 2\)),  we find that the AR for CM is bounded above by \(2^{\frac{3}{2}-\frac{2}{p}}\). We conjecture that the AR of CM actually equals the lower bound \(2^{1-\frac{1}{p}}\) (as is the case for \(p=2\) and \(p=\infty\)) for any \(p\geq 2\).
