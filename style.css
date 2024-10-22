@@ -1,108 +1,139 @@
 body {
-  margin: 0;
-  padding: 0;
-  padding-top: 60px;
-  padding-bottom: 60px; /* Adjust this value based on the height of the footer */
-  font-family: 'Roboto', Arial, sans-serif;
-  background-color: #f5f5f5;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
 }
 
 header {
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
-  text-align: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000; /* Ensures the header stays on top */
+    background-color: #4d4d4d;
+    color: white;
+    padding: 15px 0;
 }
 
-header nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
+nav {
+    text-align: center;
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
-header nav li {
-  margin: 0 10px;
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-header nav a {
-  color: #fff;
-  text-decoration: none;
+nav ul li {
+    display: inline;
+    margin: 0 15px;
 }
 
-.profile {
-  background-color: #f5f5f5;
-  padding: 20px;
-  text-align: center;
-  margin-bottom: 20px;
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+.container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 20px;
 }
 
 .profile-image img {
-  width: 150px;
-  margin-bottom: 10px;
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    object-fit: cover;
+    border: 2px solid #ddd;
 }
 
 .contact-details {
-  text-align: center;
+    flex: 1;
+    margin-left: 30px;
+}
+
+.contact-details h3 {
+    margin: 0;
+    font-size: 28px;
+    color: #4d4d4d;
+}
+
+.contact-details p {
+    margin: 5px 0;
+}
+
+.social-media-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .social-media-links a {
-  display: inline-block;
-  margin-right: 10px;
-  font-size: 20px;
-  color: #333;
-  transition: all 0.2s ease-in-out;
+    margin: 0 10px;
+    color: #4d4d4d;
+    font-size: 24px;
 }
 
-.social-media-links a:hover {
-  color: #fff;
+.research-item {
+    background: white;
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-main {
-  margin: 0 auto;
-  max-width: 800px;
-  padding: 20px;
+.research-item h4 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
 }
 
-section h2 {
-  margin-top: 30px;
+.research-item p {
+    margin: 5px 0;
 }
 
-.abstract {
-  display: none;
-  background-color: #E5E4E2;
-  padding: 10px;
+.buttons {
+    margin-top: 10px;
 }
 
-a {
-  text-decoration: none;
+/* Button styling for both Abstract and PDF */
+button, a.pdf-button {
+    background-color: #e0e0e0;
+    color: #333;
+    border: none;
+    padding: 3px 8px;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-weight: normal;
+    display: inline-block;
+}
+
+button:hover, a.pdf-button:hover {
+    background-color: #ccc;
 }
 
 footer {
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
-  text-align: center;
-  margin-top: 20px;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000; /* Ensures the footer stays on top */
-}
-
-/* Add the following code to your styles.css file */
-
-.profile-container {
-  display: flex;
-  justify-content: center;
-  background-color: #f5f5f5;
-  padding: 10px;
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px 0;
+    background: #4d4d4d;
+    color: white;
 }
 
