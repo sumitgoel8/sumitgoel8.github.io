@@ -79,19 +79,18 @@ publishedPapers.forEach(item => {
 });
 
 function generateResearchHTML(item) {
-    return `
-        <div class="research-item">
-            <h4>${item.title}</h4>
-            <p>${item.coauthors}</p>
-            ${item.conference_info ? `<p>${item.conference_info}</p>` : ''}
-            ${item.journal_info ? `<p>${item.journal_info}</p>` : ''}
-            <div class="buttons">
-                <button id="button-${item.id}" onclick="toggleAbstract(${item.id})">Abstract +</button>
-                <a href="${item.pdfLink}" class="pdf-button">PDF</a>
-            </div>
-            <p class="abstract" id="abstract-${item.id}" style="display: none;">${item.abstract}</p>
-        </div>
-    `;
+	return `
+        <li>
+          	<p> <b>${item.title}</b><br>
+          	${item.coauthors ? `${item.coauthors}<br>` : ''}
+      		${item.conference_info ? `${item.conference_info}<br>` : ''}
+      		${item.journal_info ? `${item.journal_info}<br>` : ''}
+      		<button id="button-${item.id}" onclick="toggleAbstract(${item.id})">Abstract +</button> <button><a href="${item.pdfLink}">PDF</a></button>
+      		</p>
+      		
+          	<p class="abstract" id="abstract-${item.id}">${item.abstract}</p>
+        </li>
+        	`;
 }
 
 function toggleAbstract(id) {
