@@ -80,6 +80,10 @@ section h2 {
   padding: 10px;
 }
 
+ul {
+  padding-left: 1.2em;
+}
+
 a {
   text-decoration: none;
 }
@@ -97,12 +101,11 @@ footer {
   z-index: 1000; /* Ensures the footer stays on top */
 }
 
-/* Add the following code to your styles.css file */
-
 .profile-container {
   display: flex;
   justify-content: center;
   background-color: #f5f5f5;
   padding: 10px;
 }
+
 
