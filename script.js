@@ -34,7 +34,7 @@ const publishedPapers = [
         title: "Project selection with partially verifiable information",
         coauthors: "(with Wade Hann-Caruthers)",
         conference_info: "Ext. abs. in   <i><a href='https://doi.org/10.1007/978-3-031-22832-2'>Proc. of WINE 2022</a></i>",
-        journal_info: "<i><a href='https://www.sciencedirect.com/journal/mathematical-social-sciences'>Mathematical Social Sciences</a></i>",
+        journal_info: "<i><a href='https://doi.org/10.1016/j.mathsocsci.2024.10.003'>Mathematical Social Sciences</a></i>",
         abstract: `We study a principal-agent project selection problem with asymmetric information. The principal must choose exactly one of \\( N \\) projects, each defined by the utility it provides to the principal and to the agent. The agent knows all the utilities, and the principal can commit to a mechanism (without transfers) that maps the agent's report about the utilities to a chosen project. Unlike the typical literature, which assumes the agent can lie arbitrarily, we examine the principal's problem under partial verifiability constraints. We characterize the class of truthful mechanisms under a family of partial verifiability constraints and study the principal's problem for the specific cases of no-overselling and no-underselling. Our results suggest significant benefits for the principal from identifying or inducing such partial verifiability constraints, while also highlighting the simple mechanisms that perform well.`,
         pdfLink: "files/mechdesign_projects.pdf",
     },
