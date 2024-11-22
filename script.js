@@ -5,7 +5,7 @@ const workingPapers = [
         coauthors: "(with Andrzej Baranski)",
         conference_info: "",
         journal_info: "",
-        abstract: `We study the classical contest design problem of allocating a budget across prizes to maximize effort. While the previous literature has predominantly focused on continuum type-space or complete information domains, we analyse the finite type-space domain, thus providing a unifying approach that sheds light on the contrasting structure of optimal contests in these extreme environments. Our results include a characterization of the equilibrium, which involves agents mixing over contiguous intervals and converges to the appropriate continuum type-space equilibrium, and an investigation of how increasing competition influences effort, leading to optimality of winner-takes-all contest under linear and concave costs.`,
+        abstract: `We study the classical contest design problem of allocating a budget across prizes to maximize effort. While the previous literature has predominantly focused on continuum type-space or complete information domains, we analyse the finite type-space domain, thus providing a unifying approach that sheds light on the contrasting structure of optimal contests in these extreme environments. Our results include a characterization of the equilibrium, which involves agents mixing over contiguous intervals, and an investigation of how increasing competition influences effort, leading to optimality of winner-takes-all contest under linear and concave costs.`,
         pdfLink: "files/contests_finitetype.pdf",
     },
     {
