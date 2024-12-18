@@ -12,7 +12,7 @@ const workingPapers = [
     	id: 6,
         title: "Luce contracts",
         coauthors: "(with Wade Hann-Caruthers)",
-        conference_info: "Ext. abs. in  <i><a href='https://ec24.sigecom.org/program/accepted-papers/'>Proc. of EC 2024</a></i>",
+        conference_info: "Ext. abs. in  <i><a href='https://doi.org/10.1145/3670865.3673598'>Proc. of EC 2024</a></i>",
         journal_info: "",
         abstract: `We study a multi-agent contract design problem with moral hazard. In our model, each agent exerts costly effort towards an individual task at which it may either succeed or fail, and the principal, who wishes to encourage effort, has an exclusive-use budget that it can use to reward the agents. We first show that any optimal contract must distribute the entire budget among the successful agents. Moreover, every such contract is optimal for some objective function. Our main contribution is then to introduce a novel class of contracts, which we call Luce contracts, and show that there is always a Luce contract that is optimal. A (generic) Luce contract assigns weights to the agents and distributes the entire budget among the successful agents in proportion to their weights. Lastly, we characterize effort profiles that can be implemented by Luce contracts, and note that Luce contracts offer a desirable alternative for implementation over commonly studied contracts, like piece-rate and bonus-pool contracts, on account of their reward variance-minimizing property.`,
         pdfLink: "files/contract_multiagent.pdf",
