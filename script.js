@@ -1,5 +1,14 @@
 const workingPapers = [
     {
+    	id: 8,
+        title: "TTC Domains",
+        coauthors: "(with Yuki Tamura)",
+        conference_info: "",
+        journal_info: "",
+        abstract: `We study the classical object reallocation problem under strict preferences, with a focus on characterizing ``TTC domains'' -- preference domains on which the Top Trading Cycles (TTC) mechanism is the unique mechanism satisfying individual rationality, Pareto efficiency, and strategyproofness. We introduce a sufficient condition for a domain to be a TTC domain, which we call the top-two condition. This condition requires that, within any subset of objects, if two objects can each be most-preferred, they can also be the top-two most-preferred objects (in both possible orders). A weaker version of this condition, applying only to subsets of size three, is shown to be necessary. These results provide a complete characterization of TTC domains for the case of three objects, unify prior studies on specific domains such as single-peaked and single-dipped preferences, and classify several previously unexplored domains as TTC domains or not.`,
+        pdfLink: "files/exchange_ttc.pdf",
+    },
+    {
     	id: 7,
         title: "Contest design with a finite type-space: A unifying approach",
         coauthors: "(with Andrzej Baranski)",
