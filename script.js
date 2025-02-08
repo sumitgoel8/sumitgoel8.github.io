@@ -10,11 +10,11 @@ const workingPapers = [
     },
     {
     	id: 7,
-        title: "Contest design with a finite type-space: A unifying approach",
+        title: "The effect of competition in contests: A unifying approach",
         coauthors: "(with Andrzej Baranski)",
         conference_info: "",
         journal_info: "",
-        abstract: `We study the classical contest design problem of allocating a budget across prizes to maximize effort. While the previous literature has predominantly focused on continuum type-space or complete information domains, we analyse the finite type-space domain, thus providing a unifying approach that sheds light on the contrasting structure of optimal contests in these extreme environments. Our results include a characterization of the equilibrium, which involves agents mixing over contiguous intervals, and an investigation of how increasing competition influences effort, leading to optimality of winner-takes-all contest under linear and concave costs.`,
+        abstract: `We study how increasing competition, by making prizes more unequal, affects effort in contests. In a finite type-space environment, we characterize the equilibrium, analyze the effect of competition under linear costs, and identify conditions under which these effects persist under general costs. Our findings reveal that competition may encourage or deter effort, depending on the relative likelihood of efficient versus inefficient types. We derive implications for the classical budget allocation problem and establish that the most competitive winner-takes-all contest is robustly optimal under linear and concave costs, thereby resolving an open question. Methodologically, our analysis of the finite type-space domain---which includes complete information as a special case and can approximate any continuum type-space---provides a unifying approach that sheds light on the contrasting results in these extensively studied environments.`,
         pdfLink: "files/contests_finitetype.pdf",
     },
     {
