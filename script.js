@@ -87,19 +87,37 @@ publishedPapers.forEach(item => {
     publishedPapersContainer.innerHTML += generateResearchHTML(item);
 });
 
+// function generateResearchHTML(item) {
+// 	return `
+//         <li>
+//           	<p> <b>${item.title}</b><br>
+//           	${item.coauthors ? `${item.coauthors}<br>` : ''}
+//       		${item.conference_info ? `${item.conference_info}<br>` : ''}
+//       		${item.journal_info ? `${item.journal_info}<br>` : ''}
+//       		<button id="button-${item.id}" onclick="toggleAbstract(${item.id})">Abstract +</button> <button><a href="${item.pdfLink}">PDF</a></button>
+//       		</p>
+//       		
+//           	<p class="abstract" id="abstract-${item.id}">${item.abstract}</p>
+//         </li>
+//         	`;
+// }
+
 function generateResearchHTML(item) {
 	return `
-        <li>
-          	<p> <b>${item.title}</b><br>
-          	${item.coauthors ? `${item.coauthors}<br>` : ''}
-      		${item.conference_info ? `${item.conference_info}<br>` : ''}
-      		${item.journal_info ? `${item.journal_info}<br>` : ''}
-      		<button id="button-${item.id}" onclick="toggleAbstract(${item.id})">Abstract +</button> <button><a href="${item.pdfLink}">PDF</a></button>
-      		</p>
-      		
-          	<p class="abstract" id="abstract-${item.id}">${item.abstract}</p>
-        </li>
-        	`;
+		<li>
+			<strong>${item.title}</strong><br>
+			${item.coauthors ? `<em>${item.coauthors}</em><br>` : ''}
+			${item.conference_info ? `${item.conference_info}<br>` : ''}
+			${item.journal_info ? `${item.journal_info}<br>` : ''}
+			
+			<div style="margin-top: 4px;">
+				<button id="button-${item.id}" onclick="toggleAbstract(${item.id})">Abstract +</button>
+				<a href="${item.pdfLink}" target="_blank">[PDF]</a>
+			</div>
+
+			<p id="abstract-${item.id}" style="display: none; margin-top: 8px;">${item.abstract}</p>
+		</li>
+	`;
 }
 
 function toggleAbstract(id) {
