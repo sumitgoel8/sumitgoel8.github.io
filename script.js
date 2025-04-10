@@ -43,7 +43,7 @@ const publishedPapers = [
         title: "Project selection with partially verifiable information",
         coauthors: "(with Wade Hann-Caruthers)",
         conference_info: "Ext. abs. in   <i><a href='https://doi.org/10.1007/978-3-031-22832-2'>Proc. of WINE 2022</a></i>",
-        journal_info: "<i><a href='https://doi.org/10.1016/j.mathsocsci.2024.10.003'>Mathematical Social Sciences</a></i>, Volume 132, 2024.",
+        journal_info: "<i><a href='https://doi.org/10.1016/j.mathsocsci.2024.10.003'>Mathematical Social Sciences</a></i>, 2024.",
         abstract: `We study a principal-agent project selection problem with asymmetric information. The principal must choose exactly one of \\( N \\) projects, each defined by the utility it provides to the principal and to the agent. The agent knows all the utilities, and the principal can commit to a mechanism (without transfers) that maps the agent's report about the utilities to a chosen project. Unlike the typical literature, which assumes the agent can lie arbitrarily, we examine the principal's problem under partial verifiability constraints. We characterize the class of truthful mechanisms under a family of partial verifiability constraints and study the principal's problem for the specific cases of no-overselling and no-underselling. Our results suggest significant benefits for the principal from identifying or inducing such partial verifiability constraints, while also highlighting the simple mechanisms that perform well.`,
         pdfLink: "files/mechdesign_projects.pdf",
     },
@@ -52,7 +52,7 @@ const publishedPapers = [
         title: "Stable allocations in discrete exchange economies",
         coauthors: "(with Federico Echenique and SangMok Lee)",
         conference_info: "",
-        journal_info: "<i><a href='https://doi.org/10.1016/j.jet.2024.105921'>Journal of Economic Theory</a></i>, Volume 222, 2024.",
+        journal_info: "<i><a href='https://doi.org/10.1016/j.jet.2024.105921'>Journal of Economic Theory</a></i>, 2024.",
         abstract: `We study stable allocations in an exchange economy with indivisible goods. The problem is well-known to be challenging, and rich enough to encode fundamentally unstable economies, such as the roommate problem. Our approach stems from generalizing the original study of an exchange economy with unit demand and unit endowments, the housing model. Our first approach uses Scarf's theorem, and proposes sufficient conditions under which a \"convexify then round\" technique ensures that the core is nonempty. The upshot is that a core allocation exists in categorical economies with dichotomous preferences. Our second approach uses a generalization of the TTC: it works under general conditions, and finds a solution that is a version of the stable set. `,
         pdfLink: "files/exchange_stable.pdf",
     },
@@ -61,7 +61,7 @@ const publishedPapers = [
         title: "Optimal tie-breaking rules",
         coauthors: "(with Amit Goyal)",
         conference_info: "",
-        journal_info: "<i><a href='https://doi.org/10.1016/j.jmateco.2023.102872'>Journal of Mathematical Economics</a></i>, Volume 108, 2023.",
+        journal_info: "<i><a href='https://doi.org/10.1016/j.jmateco.2023.102872'>Journal of Mathematical Economics</a></i>, 2023.",
         abstract: `We consider two-player contests with the possibility of ties and study the effect of different tie-breaking rules on effort. For ratio-form and difference-form contests that admit pure-strategy Nash equilibrium, we find that the effort of both players is monotone decreasing in the probability that ties are broken in favor of the stronger player. Thus, the effort-maximizing tie-breaking rule commits to breaking ties in favor of the weaker agent. With symmetric agents, we find that the equilibrium is generally symmetric and independent of the tie-breaking rule. We also study the design of random tie-breaking rules that are unbiased ex-ante and identify sufficient conditions under which breaking ties before the contest actually leads to greater expected effort than the more commonly observed practice of breaking ties after the contest.`,
         pdfLink: "files/contests_tiebreak.pdf",
     },
@@ -70,7 +70,7 @@ const publishedPapers = [
         title: "Optimality of the coordinate-wise median mechanism for strategyproof facility location in two dimensions",
         coauthors: "(with Wade Hann-Caruthers)",
         conference_info: "Ext. abs. in  <i><a href='https://doi.org/10.1007/978-3-031-15714-1'>Proc. of SAGT 2022</a></i>",
-        journal_info: "<i><a href='https://doi.org/10.1007/s00355-022-01435-1'>Social Choice and Welfare</a></i>, Volume 61, 2023.",
+        journal_info: "<i><a href='https://doi.org/10.1007/s00355-022-01435-1'>Social Choice and Welfare</a></i>, 2023.",
         abstract: `We consider the facility location problem in two dimensions. In particular, we consider a setting where agents have Euclidean preferences, defined by their ideal points, for a facility to be located in \\( \\mathbb{R}^2 \\).  We show that for the  p-norm ( \\( p \\geq 1 \\)) objective, the coordinate-wise median mechanism (CM) has the lowest worst-case  approximation ratio  in the class of deterministic, anonymous, and strategyproof mechanisms. For the minisum objective and an odd number of agents \\( n \\), we show that CM has a worst-case approximation ratio (AR) of \\( \\sqrt{2}\\frac{\\sqrt{n^2+1}}{n+1} \\). For the p-norm social cost objective (\\( p\\geq 2 \\)),  we find that the AR for CM is bounded above by \\( 2^{\\frac{3}{2}-\\frac{2}{p}} \\). We conjecture that the AR of CM actually equals the lower bound \\( 2^{1-\\frac{1}{p}} \\) (as is the case for \\( p=2 \\) and \\( p=\\infty\\)) for any \\( p\\geq 2 \\).`,
         pdfLink: "files/mechdesign_facility.pdf",
     }
@@ -87,38 +87,21 @@ publishedPapers.forEach(item => {
     publishedPapersContainer.innerHTML += generateResearchHTML(item);
 });
 
-// function generateResearchHTML(item) {
-// 	return `
-//         <li>
-//           	<p> <b>${item.title}</b><br>
-//           	${item.coauthors ? `${item.coauthors}<br>` : ''}
-//       		${item.conference_info ? `${item.conference_info}<br>` : ''}
-//       		${item.journal_info ? `${item.journal_info}<br>` : ''}
-//       		<button id="button-${item.id}" onclick="toggleAbstract(${item.id})">Abstract +</button> <button><a href="${item.pdfLink}">PDF</a></button>
-//       		</p>
-//       		
-//           	<p class="abstract" id="abstract-${item.id}">${item.abstract}</p>
-//         </li>
-//         	`;
-// }
-
 function generateResearchHTML(item) {
 	return `
-		<li>
-			<strong>${item.title}</strong><br>
-			${item.coauthors ? `<em>${item.coauthors}</em><br>` : ''}
-			${item.conference_info ? `${item.conference_info}<br>` : ''}
-			${item.journal_info ? `${item.journal_info}<br>` : ''}
-			
-			<div style="margin-top: 4px;">
-				<button id="button-${item.id}" onclick="toggleAbstract(${item.id})">Abstract +</button>
-				<a href="${item.pdfLink}" target="_blank">[PDF]</a>
-			</div>
-
-			<p id="abstract-${item.id}" style="display: none; margin-top: 8px;">${item.abstract}</p>
-		</li>
-	`;
+        <li>
+          	<p> <b>${item.title}</b><br>
+          	${item.coauthors ? `${item.coauthors}<br>` : ''}
+      		${item.conference_info ? `${item.conference_info}<br>` : ''}
+      		${item.journal_info ? `${item.journal_info}<br>` : ''}
+      		<button id="button-${item.id}" onclick="toggleAbstract(${item.id})">Abstract +</button> <button><a href="${item.pdfLink}">PDF</a></button>
+      		</p>
+      		
+          	<p class="abstract" id="abstract-${item.id}">${item.abstract}</p>
+        </li>
+        	`;
 }
+
 
 function toggleAbstract(id) {
   const abstract = document.getElementById(`abstract-${id}`);
