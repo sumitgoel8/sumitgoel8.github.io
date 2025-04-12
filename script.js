@@ -1,7 +1,7 @@
 const workingPapers = [
     {
     	id: 8,
-        title: "TTC Domains",
+        title: "Top-two condition: Characterizing TTC on restricted domains",
         coauthors: "(with Yuki Tamura)",
         conference_info: "",
         journal_info: "",
