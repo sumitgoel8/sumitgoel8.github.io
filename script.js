@@ -34,7 +34,7 @@ const publishedPapers = [
         title: "Optimal grading contests",
         coauthors: "",
         conference_info: "Ext. abs. in  <i><a href='https://doi.org/10.1145/3580507.3597670'>Proc. of EC 2023</a></i>",
-        journal_info: "<i>Games and Economic Behavior</i>, 2025",
+        journal_info: "<i><a href='https://doi.org/10.1016/j.geb.2025.04.005'>Games and Economic Behavior</a></i>, 2025",
         abstract: `We study the design of effort-maximizing grading schemes between agents with private abilities. Assuming agents derive value from the information their grade reveals about their ability, we find that more informative grading schemes induce more competitive contests. In the contest framework, we investigate the effect of manipulating individual prizes and increasing competition on expected effort, identifying conditions on ability distributions and cost functions under which these transformations may encourage or discourage effort. Our results suggest that more informative grading schemes encourage effort when agents of moderate ability are highly likely, and discourage effort when such agents are unlikely.`,
         pdfLink: "files/contests_grading.pdf",
     },
