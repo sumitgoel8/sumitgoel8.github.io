@@ -1,5 +1,14 @@
 const workingPapers = [
     {
+    	id: 9,
+        title: "An efficiency ordering of $k$-price auctions under complete information",
+        coauthors: "(with Jeffrey Zeidel)",
+        conference_info: "",
+        journal_info: "",
+        abstract: `We study k-price auctions in a complete information environment and characterize all pure-strategy Nash equilibrium outcomes. In a setting with n agents having ordered valuations, we show that any agent except those with the lowest k-2 valuations can win in equilibrium. As a consequence, worst-case welfare increases monotonically as we go from  k=2 (second-price auction) to k=n (lowest-price auction), and the first-price auction has the highest worst-case welfare.`,
+        pdfLink: "files/auctions_efficiency.pdf",
+    },
+    {
     	id: 8,
         title: "TTC Domains",
         coauthors: "(with Yuki Tamura)",
