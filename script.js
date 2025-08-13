@@ -1,15 +1,6 @@
 const workingPapers = [
     {
     	id: 9,
-        title: "An efficiency ordering of k-price auctions under complete information",
-        coauthors: "(with Jeffrey Zeidel)",
-        conference_info: "",
-        journal_info: "",
-        abstract: `We study k-price auctions in a complete information environment and characterize all pure-strategy Nash equilibrium outcomes. In a setting with n agents having ordered valuations, we show that any agent, except those with the lowest k-2 valuations, can win in equilibrium. As a consequence, worst-case welfare increases monotonically as we go from second-price auction (k=2) to lowest-price auction (k=n), with the first-price auction achieving the highest worst-case welfare.`,
-        pdfLink: "files/auctions_efficiency.pdf",
-    },
-    {
-    	id: 8,
         title: "TTC Domains",
         coauthors: "(with Yuki Tamura)",
         conference_info: "",
@@ -18,7 +9,7 @@ const workingPapers = [
         pdfLink: "files/exchange_ttc.pdf",
     },
     {
-    	id: 7,
+    	id: 8,
         title: "The effect of competition in contests: A unifying approach",
         coauthors: "(with Andrzej Baranski)",
         conference_info: "",
@@ -27,7 +18,7 @@ const workingPapers = [
         pdfLink: "files/contests_finitetype.pdf",
     },
     {
-    	id: 6,
+    	id: 7,
         title: "Multi-agent contract design with a budget",
         coauthors: "(with Wade Hann-Caruthers)",
         conference_info: "Ext. abs. in  <i><a href='https://doi.org/10.1145/3670865.3673598'>Proc. of EC 2024</a></i>",
@@ -38,6 +29,15 @@ const workingPapers = [
 ]
 
 const publishedPapers = [
+    {
+    	id: 6,
+        title: "An efficiency ordering of k-price auctions under complete information",
+        coauthors: "(with Jeffrey Zeidel)",
+        conference_info: "",
+        journal_info: "<i>Economics Letters</i>, 2025",
+        abstract: `We study k-price auctions in a complete information environment and characterize all pure-strategy Nash equilibrium outcomes. In a setting with n agents having ordered valuations, we show that any agent, except those with the lowest k-2 valuations, can win in equilibrium. As a consequence, worst-case welfare increases monotonically as we go from second-price auction (k=2) to lowest-price auction (k=n), with the first-price auction achieving the highest worst-case welfare.`,
+        pdfLink: "files/auctions_efficiency.pdf",
+    },
     {
     	id: 5,
         title: "Optimal grading contests",
