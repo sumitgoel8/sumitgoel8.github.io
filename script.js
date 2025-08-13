@@ -5,7 +5,7 @@ const workingPapers = [
         coauthors: "(with Jeffrey Zeidel)",
         conference_info: "",
         journal_info: "",
-        abstract: `We study k-price auctions in a complete information environment and characterize all pure-strategy Nash equilibrium outcomes. In a setting with n agents having ordered valuations, we show that any agent, except those with the lowest k-2 valuations, can win in equilibrium. As a consequence, worst-case welfare increases monotonically as we go from  k=2 (second-price auction) to k=n (lowest-price auction), with the first-price auction achieving the highest worst-case welfare.`,
+        abstract: `We study k-price auctions in a complete information environment and characterize all pure-strategy Nash equilibrium outcomes. In a setting with n agents having ordered valuations, we show that any agent, except those with the lowest k-2 valuations, can win in equilibrium. As a consequence, worst-case welfare increases monotonically as we go from second-price auction (k=2) to lowest-price auction (k=n), with the first-price auction achieving the highest worst-case welfare.`,
         pdfLink: "files/auctions_efficiency.pdf",
     },
     {
