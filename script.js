@@ -1,5 +1,14 @@
 const workingPapers = [
     {
+    	id: 10,
+        title: "Swap Bounded Envy",
+        coauthors: "(with Federico Echenique and SangMok Lee)",
+        conference_info: "",
+        journal_info: "",
+        abstract: `We study fairness in the allocation of discrete goods. Exactly fair (envy-free) allocations are impossible, so we discuss notions of approximate fairness. In particular, we focus on allocations in which the swap of two items serves to eliminate any envy, either for the allocated bundles or with respect to a reference bundle. We propose an algorithm that, under some restrictions on agents' preferences, achieves an allocation with ``swap bounded envy.''`,
+        pdfLink: "files/allocation_swapBE.pdf",
+    },
+    {
     	id: 9,
         title: "TTC Domains",
         coauthors: "(with Yuki Tamura)",
