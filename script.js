@@ -21,7 +21,7 @@ const workingPapers = [
     	id: 8,
         title: "TTC Domains",
         coauthors: "(with Yuki Tamura)",
-        conference_info: "To be presented at <i><a href='https://wine2025.cs.rutgers.edu/'>WINE 2025</a></i>",
+        conference_info: "Ext. abs. in <i><a href='https://wine2025.cs.rutgers.edu/'> Proc. of WINE 2025</a></i> (forthcoming)",
         journal_info: "",
         abstract: `We study the object reallocation problem under strict preferences. On the unrestricted domain, Ekici (2024) showed that the Top Trading Cycles (TTC) mechanism is the unique mechanism that is individually rational, pair efficient, and strategyproof. We introduce a richness property on preference domains---the top-two condition---and show that this characterization extends to all domains satisfying it. The condition requires that within any subset of objects, if two objects can each be most-preferred, they can also be ranked as the top two (in either order). We further show that almost all domains failing the top-two condition for a triple or quadruple of objects admit non-TTC mechanisms satisfying the axioms. These results unify prior findings on specific domains, demonstrate the robustness of Ekici (2024)’s characterization, and suggest a minimal richness requirement that may underlie it.`,
         pdfLink: "files/exchange_ttc.pdf",
