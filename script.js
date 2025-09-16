@@ -1,6 +1,15 @@
 const workingPapers = [
     {
     	id: 10,
+        title: "The effect of competition in contests: A unifying approach",
+        coauthors: "(with Andrzej Baranski)",
+        conference_info: "",
+        journal_info: "<i>Job Market Paper</i>",
+        abstract: `We study all-pay contests with a general finite type-space and show that the most competitive winner-takes-all contest maximizes both total and maximum effort under linear or concave costs, resolving a long-standing open question in contest design. However, the effect of competition is nuanced, as we uncover an interior discouragement effect: making prizes more unequal may reduce effort if relatively inefficient types are sufficiently likely. An experiment provides qualitative support for these findings. Our analysis develops a novel methodology based on characterizing equilibrium effort through the probability of outperforming an arbitrary opponent, offering a broadly applicable tool particularly useful in settings where mixed equilibria hinder analysis. Moreover, it provides a unifying framework that reconciles contrasting results under complete information and continuum type-space environments (for which we establish an equilibrium convergence result).`,
+        pdfLink: "files/contests_finitetype.pdf",
+    },
+    {
+    	id: 9,
         title: "Swap Bounded Envy",
         coauthors: "(with Federico Echenique and SangMok Lee)",
         conference_info: "",
@@ -9,22 +18,13 @@ const workingPapers = [
         pdfLink: "files/allocation_swapBE.pdf",
     },
     {
-    	id: 9,
+    	id: 8,
         title: "TTC Domains",
         coauthors: "(with Yuki Tamura)",
-        conference_info: "",
+        conference_info: "To be presented at <i><a href='https://wine2025.cs.rutgers.edu/'>WINE 2025</a></i>",
         journal_info: "",
         abstract: `We study the object reallocation problem under strict preferences. On the unrestricted domain, Ekici (2024) showed that the Top Trading Cycles (TTC) mechanism is the unique mechanism that is individually rational, pair efficient, and strategyproof. We introduce a richness property on preference domains---the top-two condition---and show that this characterization extends to all domains satisfying it. The condition requires that within any subset of objects, if two objects can each be most-preferred, they can also be ranked as the top two (in either order). We further show that almost all domains failing the top-two condition for a triple or quadruple of objects admit non-TTC mechanisms satisfying the axioms. These results unify prior findings on specific domains, demonstrate the robustness of Ekici (2024)’s characterization, and suggest a minimal richness requirement that may underlie it.`,
         pdfLink: "files/exchange_ttc.pdf",
-    },
-    {
-    	id: 8,
-        title: "The effect of competition in contests: A unifying approach",
-        coauthors: "(with Andrzej Baranski)",
-        conference_info: "",
-        journal_info: "",
-        abstract: `We study all-pay contests with a general finite type-space and show that the most competitive winner-takes-all contest maximizes both total and maximum effort under linear or concave costs, resolving a long-standing open question in contest design. However, the effect of competition is nuanced, as we uncover an interior discouragement effect: making prizes more unequal may reduce effort if relatively inefficient types are sufficiently likely. An experiment provides qualitative support for these findings. Our analysis develops a novel methodology based on characterizing equilibrium effort through the probability of outperforming an arbitrary opponent, offering a broadly applicable tool particularly useful in settings where mixed equilibria hinder analysis. Moreover, it provides a unifying framework that reconciles contrasting results under complete information and continuum type-space environments (for which we establish an equilibrium convergence result).`,
-        pdfLink: "files/contests_finitetype.pdf",
     },
     {
     	id: 7,
