@@ -31,7 +31,7 @@ const workingPapers = [
         title: "Multi-agent contract design with a budget",
         coauthors: "(with Wade Hann-Caruthers)",
         conference_info: "Ext. abs. in  <i><a href='https://doi.org/10.1145/3670865.3673598'>Proc. of EC 2024</a></i>",
-        journal_info: "",
+        journal_info: "R&R at <i>Games and Economic Behavior</i>",
         abstract: `We study a multi-agent contract design problem with moral hazard. In our model, each agent exerts costly effort towards an individual task at which it may either succeed or fail, and the principal, who wishes to encourage effort, has an exclusive-use budget that it can use to reward the agents. A motivating application is crowdsourcing for innovation, where a fixed budget is provided to a crowdsourcing platform to use for rewarding participants based on their submissions. Our main contribution is to introduce a novel class of contracts, which we call Luce contracts, and show that there is always a Luce contract that is optimal. A (generic) Luce contract assigns weights to the agents and distributes the entire budget among the successful agents in proportion to their weights. Furthermore, we characterize effort profiles that can be implemented by Luce contracts and show that Luce contracts offer a way to mitigate the uncertainty in total payments compared to alternative contracts—such as piece-rate or bonus-pool contracts—suggesting their desirability even in environments without budget constraints.`,
         pdfLink: "files/contract_multiagent.pdf",
     }
