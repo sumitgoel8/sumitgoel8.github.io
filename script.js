@@ -10,7 +10,7 @@ const workingPapers = [
     },
     {
     	id: 10,
-        title: "Swap Bounded Envy",
+        title: "Swap bounded envy",
         coauthors: "(with Federico Echenique and SangMok Lee)",
         conference_info: "",
         journal_info: "",
@@ -19,7 +19,7 @@ const workingPapers = [
     },
     {
     	id: 9,
-        title: "The (Ir)relevance of feedback policies in dynamic contests",
+        title: "Feedback in dynamic contests: Theory and experiment",
         coauthors: "(with Yiqing Yan and Jeffrey Zeidel)",
         conference_info: "",
         journal_info: "",
@@ -28,7 +28,7 @@ const workingPapers = [
     },
     {
     	id: 8,
-        title: "TTC Domains",
+        title: "TTC domains",
         coauthors: "(with Yuki Tamura)",
         conference_info: "Ext. abs. in <i><a href='https://wine2025.cs.rutgers.edu/'> Proc. of WINE 2025</a></i>",
         journal_info: "",
