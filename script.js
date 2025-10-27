@@ -23,7 +23,7 @@ const workingPapers = [
         coauthors: "(with Yiqing Yan and Jeffrey Zeidel)",
         conference_info: "",
         journal_info: "",
-        abstract: `We study the effect of interim feedback policies in a dynamic all-pay auction where two players bid over two stages to win a common-value prize. We show that sequential equilibrium outcomes are characterized by Cheapest Signal Equilibria, wherein stage 1 bids are such that one player bids zero while the other chooses a cheapest bid consistent with some signal. Equilibrium payoffs for both players are always zero, and the sum of expected total bids equals the value of the prize. We conduct an experiment with four natural feedback policy treatments--- full, rank, and two cutoff policies---and while the bidding behavior deviates from equilibrium, we fail to reject the hypothesis of no treatment effect on total bids. Further, stage 1 bids induce sunk costs and head starts, and we test for the resulting sunk cost and discouragement effects in stage 2 bidding.`,
+        abstract: `We study the effect of feedback policies in a two-stage all-pay auction with two players. Equilibrium outcomes are characterized by Cheapest Signal Equilibria, wherein at least one agent bids 0 in stage 1, payoffs for both players are zero, and sum of total bids equals the prize value. We conduct an experiment with four natural feedback policy treatments---full, rank, and two cutoff policies---and while the bids deviate from equilibrium, we fail to reject the hypothesis of no treatment effect on total bids. We also test for the effect of sunk costs and head starts from stage 1 bids on stage 2 bids.`,
         pdfLink: "files/contests_feedback.pdf",
     },
     {
