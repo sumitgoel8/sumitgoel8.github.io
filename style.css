@@ -86,9 +86,13 @@ ul {
 
 a,
 a:visited,
-a:hover,
 a:active {
-  color: #000;  /* black text */
+  color: #6a0dad;  /* muted purple */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #4b3a6a;  /* slightly darker purple on hover */
   text-decoration: none;
 }
 
