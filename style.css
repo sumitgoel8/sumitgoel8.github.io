@@ -84,16 +84,8 @@ ul {
   padding-left: 1.2em;
 }
 
-a,
-a:visited,
-a:active {
-  color: #6a0dad;  /* muted purple */
-  text-decoration: none;
-}
-
-a:hover {
-  color: #4b3a6a;  /* slightly darker purple on hover */
-  text-decoration: none;
+a { 
+  text-decoration: none; 
 }
 
 footer {
