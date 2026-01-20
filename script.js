@@ -104,40 +104,113 @@ const publishedPapers = [
 ]
 
 
-const workingPapersContainer = document.getElementById("working-papers-container");
-workingPapers.forEach(item => {
-    workingPapersContainer.innerHTML += generateResearchHTML(item);
-});
+function paperHTML(item){
+  const metaLines = [item.coauthors, item.conference_info, item.journal_info].filter(Boolean);
+  const meta = metaLines.length ? `<p class="muted">${metaLines.join("<br>")}</p>` : "";
 
-const publishedPapersContainer = document.getElementById("published-papers-container");
-publishedPapers.forEach(item => {
-    publishedPapersContainer.innerHTML += generateResearchHTML(item);
-});
-
-function generateResearchHTML(item) {
-	return `
-        <li>
-          	<p> <b>${item.title}</b><br>
-          	${item.coauthors ? `${item.coauthors}<br>` : ''}
-      		${item.conference_info ? `${item.conference_info}<br>` : ''}
-      		${item.journal_info ? `${item.journal_info}<br>` : ''}
-      		<button id="button-${item.id}" onclick="toggleAbstract(${item.id})">Abstract +</button> <button><a href="${item.pdfLink}">PDF</a></button>
-      		</p>
-      		
-          	<p class="abstract" id="abstract-${item.id}">${item.abstract}</p>
-        </li>
-        	`;
+  return `
+    <li>
+      <div><strong>${item.title}</strong></div>
+      ${meta}
+      <div style="margin-top:10px; display:flex; gap:10px; flex-wrap:wrap;">
+        <button class="btn" id="button-${item.id}" type="button" onclick="toggleAbstract(${item.id})">Abstract +</button>
+        <a class="btn" href="${item.pdfLink}" target="_blank" rel="noopener">PDF</a>
+      </div>
+      <div class="abstract" id="abstract-${item.id}">${item.abstract}</div>
+    </li>
+  `;
 }
 
+function render(){
+  const wp = document.getElementById("working-papers-container");
+  const pp = document.getElementById("published-papers-container");
+  if (wp) wp.innerHTML = workingPapers.map(paperHTML).join("");
+  if (pp) pp.innerHTML = publishedPapers.map(paperHTML).join("");
 
-function toggleAbstract(id) {
-  const abstract = document.getElementById(`abstract-${id}`);
-  const button = document.getElementById(`button-${id}`);
-  if (abstract.style.display === "block") {
-    abstract.style.display = "none";
-    button.innerHTML = "Abstract +";
-  } else {
-    abstract.style.display = "block";
-    button.innerHTML = "Abstract -";
+  if (window.MathJax && MathJax.typesetPromise) MathJax.typesetPromise();
+}
+
+function toggleAbstract(id){
+  const abs = document.getElementById(`abstract-${id}`);
+  const btn = document.getElementById(`button-${id}`);
+  if (!abs || !btn) return;
+
+  const open = abs.style.display === "block";
+  abs.style.display = open ? "none" : "block";
+  btn.textContent = open ? "Abstract +" : "Abstract -";
+
+  if (!open && window.MathJax && MathJax.typesetPromise) MathJax.typesetPromise([abs]);
+}
+
+/* Theme toggle */
+(function(){
+  const btn = document.getElementById("themeToggle");
+  if (!btn) return;
+
+  const root = document.documentElement;
+
+  function systemDark(){
+    return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
   }
-}
+  function effectiveDark(){
+    const t = root.getAttribute("data-theme");
+    if (t === "dark") return true;
+    if (t === "light") return false;
+    return systemDark();
+  }
+  function label(){
+    btn.textContent = effectiveDark() ? "Light mode" : "Dark mode";
+  }
+
+  const saved = localStorage.getItem("theme");
+  if (saved === "dark" || saved === "light") root.setAttribute("data-theme", saved);
+  label();
+
+  btn.addEventListener("click", () => {
+    const next = effectiveDark() ? "light" : "dark";
+    root.setAttribute("data-theme", next);
+    localStorage.setItem("theme", next);
+    label();
+  });
+})();
+
+render();
+
+
+// const workingPapersContainer = document.getElementById("working-papers-container");
+// workingPapers.forEach(item => {
+//     workingPapersContainer.innerHTML += generateResearchHTML(item);
+// });
+// 
+// const publishedPapersContainer = document.getElementById("published-papers-container");
+// publishedPapers.forEach(item => {
+//     publishedPapersContainer.innerHTML += generateResearchHTML(item);
+// });
+// 
+// function generateResearchHTML(item) {
+// 	return `
+//         <li>
+//           	<p> <b>${item.title}</b><br>
+//           	${item.coauthors ? `${item.coauthors}<br>` : ''}
+//       		${item.conference_info ? `${item.conference_info}<br>` : ''}
+//       		${item.journal_info ? `${item.journal_info}<br>` : ''}
+//       		<button id="button-${item.id}" onclick="toggleAbstract(${item.id})">Abstract +</button> <button><a href="${item.pdfLink}">PDF</a></button>
+//       		</p>
+//       		
+//           	<p class="abstract" id="abstract-${item.id}">${item.abstract}</p>
+//         </li>
+//         	`;
+// }
+// 
+// 
+// function toggleAbstract(id) {
+//   const abstract = document.getElementById(`abstract-${id}`);
+//   const button = document.getElementById(`button-${id}`);
+//   if (abstract.style.display === "block") {
+//     abstract.style.display = "none";
+//     button.innerHTML = "Abstract +";
+//   } else {
+//     abstract.style.display = "block";
+//     button.innerHTML = "Abstract -";
+//   }
+// }
