@@ -4,7 +4,7 @@ const workingPapers = [
         title: "The effect of competition in contests: A unifying approach",
         coauthors: "(with Andrzej Baranski)",
         conference_info: "",
-        journal_info: "Job Market Paper",
+        journal_info: "",
         abstract: `We study rank-order contests with finite type spaces and establish the winner-takes-all contest as robustly optimal: it maximizes the total effort of the top q agents, for any q, under linear, concave, and even moderately convex cost functions---thereby resolving an open question in contest design. At the same time, the effect of competition is nuanced. We uncover an interior discouragement effect: shifting value toward better-ranked prizes may reduce effort when inefficient types are relatively likely. Methodologically, our analysis develops a novel approach based on characterizing symmetric equilibria through the probability of outperforming an arbitrary agent. The representation is broadly applicable and provides a unifying lens that reconciles contrasting results across complete-information and continuum type-space environments, for which we also establish an equilibrium convergence result.`,
         pdfLink: "files/contests_finitetype.pdf",
     },
