@@ -14,7 +14,7 @@ const workingPapers = [
         coauthors: "(with Federico Echenique and SangMok Lee)",
         conference_info: "",
         journal_info: "",
-        abstract: `We study fairness in the allocation of discrete goods. Exactly fair (envy-free) allocations are impossible, so we discuss notions of approximate fairness. In particular, we focus on allocations in which the swap of two items serves to eliminate any envy, either for the allocated bundles or with respect to a reference bundle. We propose an algorithm that, under some restrictions on agents' preferences, achieves an allocation with "swap bounded envy."`,
+        abstract: `We study fairness in the allocation of discrete goods. Exactly fair (envy-free) allocations are impossible, so we discuss notions of approximate fairness. In particular, we focus on allocations in which the swap of two items serves to eliminate any envy, either for the allocated bundles or with respect to a reference bundle. We propose an algorithm that, under some restrictions on agents' preferences, achieves an allocation with "swap bounded envy".`,
         pdfLink: "files/allocation_swapBE.pdf",
     },
     {
@@ -104,6 +104,81 @@ const publishedPapers = [
 ]
 
 
+const nyuadCourses = [
+  {
+    name: "Intermediate Microeconomics",
+    term: "Spring 2024\u201326",
+    links: [],
+  },
+]
+
+const caltechCourses = [
+  {
+    name: "Econometrics",
+    term: "Fall 2018, Fall 2019",
+    links: [],
+  },
+  {
+    name: "Introduction to Economics",
+    term: "Winter 2019",
+    links: [
+      { label: "edX", url: "https://learning.edx.org/course/course-v1:CaltechX+Ec1011x+1T2019/home" },
+    ],
+  },
+  {
+    name: "Introduction to Finance",
+    term: "Winter 2020, Winter 2022",
+    links: [],
+  },
+  {
+    name: "Game Theory",
+    term: "Spring 2020",
+    links: [
+      { label: "notes", url: "http://tamuz.caltech.edu/teaching/ps172/lectures.pdf" },
+    ],
+  },
+  {
+    name: "Theory of Value",
+    term: "Fall 2021",
+    links: [
+      { label: "notes", url: "https://farzad-pourbabaee.github.io/Teaching/EC121a_Fall2021/EC121a_Lecture_Notes.pdf" },
+    ],
+  },
+  {
+    name: "Algorithmic Economics",
+    term: "Spring 2022, Spring 2023",
+    links: [
+      { label: "notes", url: "https://fedors.info/tutorials/2022ec149/ec149_Fedor_Sandomirskiy_lecture_notes.pdf" },
+    ],
+  },
+]
+
+const econschoolCourses = [
+  {
+    name: "Mathematics for Economists",
+    term: "Fall 2020",
+    links: [],
+  },
+]
+
+
+function courseHTML(item){
+  const sep = `<span class="sep">·</span>`;
+  const links = (item.links || [])
+    .map(l => `<a href="${l.url}" target="_blank" rel="noopener">[${l.label}]</a>`)
+    .join(sep);
+  const parts = [item.term, links].filter(Boolean).join(sep);
+  const meta = parts ? `<div class="course-meta">${parts}</div>` : "";
+
+  return `
+    <li>
+      <div class="course">${item.name}</div>
+      ${meta}
+    </li>
+  `;
+}
+
+
 function paperHTML(item){
   const metaLines = [item.coauthors, item.conference_info, item.journal_info].filter(Boolean);
   const meta = metaLines.length ? `<p class="paper-meta">${metaLines.join("<br>")}</p>` : "";
@@ -126,6 +201,13 @@ function render(){
   const pp = document.getElementById("published-papers-container");
   if (wp) wp.innerHTML = workingPapers.map(paperHTML).join("");
   if (pp) pp.innerHTML = publishedPapers.map(paperHTML).join("");
+
+  const ny = document.getElementById("nyuad-container");
+  const ct = document.getElementById("caltech-container");
+  const es = document.getElementById("econschool-container");
+  if (ny) ny.innerHTML = nyuadCourses.map(courseHTML).join("");
+  if (ct) ct.innerHTML = caltechCourses.map(courseHTML).join("");
+  if (es) es.innerHTML = econschoolCourses.map(courseHTML).join("");
 
   if (window.MathJax && MathJax.typesetPromise) MathJax.typesetPromise();
 }
@@ -176,4 +258,5 @@ function toggleAbstract(id){
 })();
 
 render();
+
 
