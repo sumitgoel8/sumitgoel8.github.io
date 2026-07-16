@@ -96,7 +96,9 @@ section{ margin-top:3rem; }
   flex-shrink:0;
   margin-top:0.4rem;   /* optically aligns with the name/text block */
 }
-.links{ margin-top:1.1rem; }
+.links{ margin:0 0 0.2rem; }
+.links:first-of-type{ margin-top:1.1rem; }
+.links:last-of-type{ margin-bottom:0; }
 .links span{ color:var(--muted); margin:0 0.35rem; }
 
 /* Generic lists (teaching) */
@@ -110,19 +112,21 @@ ul.papers{
   margin:0 0 1.5rem;
 }
 ul.papers > li{
-  margin:0 0 1.5rem;
+  margin:0 0 1.1rem;
 }
 .paper-title{
   margin:0;
   font-weight:600;
+  line-height:1.4;
 }
 .paper-meta{
-  margin:0.15rem 0 0;
+  margin:0.1rem 0 0;
   color:var(--muted);
   font-size:0.97rem;
+  line-height:1.4;
 }
 .paper-links{
-  margin:0.25rem 0 0;
+  margin:0.15rem 0 0;
   font-size:0.95rem;
 }
 .paper-links a,
@@ -168,8 +172,11 @@ ul.papers > li{
 
 /* Mobile */
 @media (max-width: 560px){
-  .profile{ flex-direction:column; }   /* photo above the bio on small screens */
+  .profile{ flex-direction:column; align-items:center; }   /* photo above the bio, centered */
   .profile img{ width:160px; height:200px; margin-top:0; }
+  .intro{ text-align:center; }
+  .intro p{ text-align:left; }        /* keep bio paragraphs readable, not centered */
+  .intro .links{ text-align:center; } /* but re-center the contact lines */
 }
 
 @media (prefers-reduced-motion: reduce){
