@@ -124,10 +124,8 @@ ul.courses > li{
 }
 ul.courses a{
   font-size:0.9rem;
-  color:var(--muted);
   margin-left:0.15rem;
 }
-ul.courses a:hover{ color:var(--accent); }
 ul.papers > li{
   margin:0 0 1.1rem;
 }
