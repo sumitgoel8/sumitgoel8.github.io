@@ -106,16 +106,16 @@ const publishedPapers = [
 
 function paperHTML(item){
   const metaLines = [item.coauthors, item.conference_info, item.journal_info].filter(Boolean);
-  const meta = metaLines.length ? `<p class="muted">${metaLines.join("<br>")}</p>` : "";
+  const meta = metaLines.length ? `<p class="paper-meta">${metaLines.join("<br>")}</p>` : "";
 
   return `
     <li>
-      <div><strong>${item.title}</strong></div>
+      <p class="paper-title">${item.title}</p>
       ${meta}
-      <div style="margin-top:10px; display:flex; gap:10px; flex-wrap:wrap;">
-        <button class="btn" id="button-${item.id}" type="button" onclick="toggleAbstract(${item.id})">Abstract +</button>
-        <a class="btn" href="${item.pdfLink}" target="_blank" rel="noopener">PDF</a>
-      </div>
+      <p class="paper-links">
+        <a href="${item.pdfLink}" target="_blank" rel="noopener">[pdf]</a>
+        <button class="linklike" id="button-${item.id}" type="button" onclick="toggleAbstract(${item.id})" aria-expanded="false">[abstract]</button>
+      </p>
       <div class="abstract" id="abstract-${item.id}">${item.abstract}</div>
     </li>
   `;
@@ -137,7 +137,8 @@ function toggleAbstract(id){
 
   const open = abs.style.display === "block";
   abs.style.display = open ? "none" : "block";
-  btn.textContent = open ? "Abstract +" : "Abstract -";
+  btn.textContent = open ? "[abstract]" : "[hide abstract]";
+  btn.setAttribute("aria-expanded", String(!open));
 
   if (!open && window.MathJax && MathJax.typesetPromise) MathJax.typesetPromise([abs]);
 }
@@ -176,41 +177,3 @@ function toggleAbstract(id){
 
 render();
 
-
-// const workingPapersContainer = document.getElementById("working-papers-container");
-// workingPapers.forEach(item => {
-//     workingPapersContainer.innerHTML += generateResearchHTML(item);
-// });
-// 
-// const publishedPapersContainer = document.getElementById("published-papers-container");
-// publishedPapers.forEach(item => {
-//     publishedPapersContainer.innerHTML += generateResearchHTML(item);
-// });
-// 
-// function generateResearchHTML(item) {
-// 	return `
-//         <li>
-//           	<p> <b>${item.title}</b><br>
-//           	${item.coauthors ? `${item.coauthors}<br>` : ''}
-//       		${item.conference_info ? `${item.conference_info}<br>` : ''}
-//       		${item.journal_info ? `${item.journal_info}<br>` : ''}
-//       		<button id="button-${item.id}" onclick="toggleAbstract(${item.id})">Abstract +</button> <button><a href="${item.pdfLink}">PDF</a></button>
-//       		</p>
-//       		
-//           	<p class="abstract" id="abstract-${item.id}">${item.abstract}</p>
-//         </li>
-//         	`;
-// }
-// 
-// 
-// function toggleAbstract(id) {
-//   const abstract = document.getElementById(`abstract-${id}`);
-//   const button = document.getElementById(`button-${id}`);
-//   if (abstract.style.display === "block") {
-//     abstract.style.display = "none";
-//     button.innerHTML = "Abstract +";
-//   } else {
-//     abstract.style.display = "block";
-//     button.innerHTML = "Abstract -";
-//   }
-// }
