@@ -193,11 +193,9 @@ ul.papers > li{
 
 /* Mobile */
 @media (max-width: 560px){
-  .profile{ flex-direction:column; align-items:center; }   /* photo above the bio, centered */
+  .profile{ flex-direction:column; align-items:flex-start; }   /* photo above bio, all left-aligned */
   .profile img{ width:160px; height:200px; margin-top:0; }
-  .intro{ text-align:center; }
-  .intro p{ text-align:left; }        /* keep bio paragraphs readable, not centered */
-  .intro .links{ text-align:center; } /* but re-center the contact lines */
+  .intro{ text-align:left; }
 }
 
 @media (prefers-reduced-motion: reduce){

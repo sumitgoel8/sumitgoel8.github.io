@@ -114,15 +114,17 @@ const nyuadCourses = [
 
 const caltechCourses = [
   {
-    name: "Econometrics",
-    term: "Fall 2018, Fall 2019",
-    links: [],
+    name: "Algorithmic Economics",
+    term: "Spring 2022\u201323",
+    links: [
+      { label: "notes", url: "https://fedors.info/tutorials/2022ec149/ec149_Fedor_Sandomirskiy_lecture_notes.pdf" },
+    ],
   },
   {
-    name: "Introduction to Economics",
-    term: "Winter 2019",
+    name: "Theory of Value",
+    term: "Fall 2021",
     links: [
-      { label: "edX", url: "https://learning.edx.org/course/course-v1:CaltechX+Ec1011x+1T2019/home" },
+      { label: "notes", url: "https://farzad-pourbabaee.github.io/Teaching/EC121a_Fall2021/EC121a_Lecture_Notes.pdf" },
     ],
   },
   {
@@ -138,18 +140,16 @@ const caltechCourses = [
     ],
   },
   {
-    name: "Theory of Value",
-    term: "Fall 2021",
+    name: "Introduction to Economics",
+    term: "Winter 2019",
     links: [
-      { label: "notes", url: "https://farzad-pourbabaee.github.io/Teaching/EC121a_Fall2021/EC121a_Lecture_Notes.pdf" },
+      { label: "edX", url: "https://learning.edx.org/course/course-v1:CaltechX+Ec1011x+1T2019/home" },
     ],
   },
   {
-    name: "Algorithmic Economics",
-    term: "Spring 2022, Spring 2023",
-    links: [
-      { label: "notes", url: "https://fedors.info/tutorials/2022ec149/ec149_Fedor_Sandomirskiy_lecture_notes.pdf" },
-    ],
+    name: "Econometrics",
+    term: "Fall 2018\u201319",
+    links: [],
   },
 ]
 
