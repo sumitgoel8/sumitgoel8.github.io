@@ -1,7 +1,7 @@
 const workingPapers = [
     {
     	id: 11,
-        title: "The effect of competition in contests: A unifying approach",
+        title: "The Effect of Competition in Contests: A Unifying Approach",
         coauthors: "(with Andrzej Baranski)",
         conference_info: "",
         journal_info: "",
@@ -10,7 +10,7 @@ const workingPapers = [
     },
     {
     	id: 10,
-        title: "Swap bounded envy",
+        title: "Swap Bounded Envy",
         coauthors: "(with Federico Echenique and SangMok Lee)",
         conference_info: "",
         journal_info: "",
@@ -19,7 +19,7 @@ const workingPapers = [
     },
     {
     	id: 9,
-        title: "Feedback in dynamic contests: Theory and experiment",
+        title: "Feedback in Dynamic Contests: Theory and Experiment",
         coauthors: "(with Yiqing Yan and Jeffrey Zeidel)",
         conference_info: "",
         journal_info: "",
@@ -28,7 +28,7 @@ const workingPapers = [
     },
     {
     	id: 8,
-        title: "TTC domains",
+        title: "TTC Domains",
         coauthors: "(with Yuki Tamura)",
         conference_info: "Ext. abs. in <a href='https://wine2025.cs.rutgers.edu/'> Proc. of WINE 2025</a>",
         journal_info: "R&R at Games and Economic Behavior",
@@ -37,7 +37,7 @@ const workingPapers = [
     },
     {
     	id: 7,
-        title: "Multi-agent contract design with a budget",
+        title: "Multi-Agent Contract Design with a Budget",
         coauthors: "(with Wade Hann-Caruthers)",
         conference_info: "Ext. abs. in  <a href='https://doi.org/10.1145/3670865.3673598'>Proc. of EC 2024</a>",
         journal_info: "R&R at Games and Economic Behavior",
@@ -49,7 +49,7 @@ const workingPapers = [
 const publishedPapers = [
     {
     	id: 6,
-        title: "An efficiency ordering of k-price auctions under complete information",
+        title: "An Efficiency Ordering of k-Price Auctions under Complete Information",
         coauthors: "(with Jeffrey Zeidel)",
         conference_info: "",
         journal_info: "<a href='https://doi.org/10.1016/j.econlet.2025.112565'>Economics Letters</a>, 2025",
@@ -58,7 +58,7 @@ const publishedPapers = [
     },
     {
     	id: 5,
-        title: "Optimal grading contests",
+        title: "Optimal Grading Contests",
         coauthors: "",
         conference_info: "Ext. abs. in  <a href='https://doi.org/10.1145/3580507.3597670'>Proc. of EC 2023</a>",
         journal_info: "<a href='https://doi.org/10.1016/j.geb.2025.04.005'>Games and Economic Behavior</a>, 2025",
@@ -67,7 +67,7 @@ const publishedPapers = [
     },
     {
     	id: 4,
-        title: "Project selection with partially verifiable information",
+        title: "Project Selection with Partially Verifiable Information",
         coauthors: "(with Wade Hann-Caruthers)",
         conference_info: "Ext. abs. in   <a href='https://doi.org/10.1007/978-3-031-22832-2'>Proc. of WINE 2022</a>",
         journal_info: "<a href='https://doi.org/10.1016/j.mathsocsci.2024.10.003'>Mathematical Social Sciences</a>, 2024",
@@ -76,7 +76,7 @@ const publishedPapers = [
     },
     {
     	id: 3,
-        title: "Stable allocations in discrete exchange economies",
+        title: "Stable Allocations in Discrete Exchange Economies",
         coauthors: "(with Federico Echenique and SangMok Lee)",
         conference_info: "",
         journal_info: "<a href='https://doi.org/10.1016/j.jet.2024.105921'>Journal of Economic Theory</a>, 2024",
@@ -85,7 +85,7 @@ const publishedPapers = [
     },
     {
     	id: 2,
-        title: "Optimal tie-breaking rules",
+        title: "Optimal Tie-Breaking Rules",
         coauthors: "(with Amit Goyal)",
         conference_info: "",
         journal_info: "<a href='https://doi.org/10.1016/j.jmateco.2023.102872'>Journal of Mathematical Economics</a>, 2023",
@@ -94,7 +94,7 @@ const publishedPapers = [
     },
     {
     	id: 1,
-        title: "Optimality of the coordinate-wise median mechanism for strategyproof facility location in two dimensions",
+        title: "Optimality of the Coordinate-Wise Median Mechanism for Strategyproof Facility Location in Two Dimensions",
         coauthors: "(with Wade Hann-Caruthers)",
         conference_info: "Ext. abs. in  <a href='https://doi.org/10.1007/978-3-031-15714-1'>Proc. of SAGT 2022</a>",
         journal_info: "<a href='https://doi.org/10.1007/s00355-022-01435-1'>Social Choice and Welfare</a>, 2023",
