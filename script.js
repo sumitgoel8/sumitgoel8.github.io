@@ -104,6 +104,23 @@ const publishedPapers = [
 ]
 
 
+const ashokaCourses = [
+  {
+    name: "Algorithmic Economics",
+    term: "Monsoon 2026",
+    links: [
+      { label: "webpage", url: "algoecon.html" },
+    ],
+  },
+  {
+    name: "Microeconomics (1-Yr MA)",
+    term: "Monsoon 2026",
+    links: [
+      { label: "webpage", url: "micro.html" },
+    ],
+  },
+]
+
 const nyuadCourses = [
   {
     name: "Intermediate Microeconomics",
@@ -202,9 +219,12 @@ function render(){
   if (wp) wp.innerHTML = workingPapers.map(paperHTML).join("");
   if (pp) pp.innerHTML = publishedPapers.map(paperHTML).join("");
 
+  const ash = document.getElementById("ashoka-container");
   const ny = document.getElementById("nyuad-container");
   const ct = document.getElementById("caltech-container");
   const es = document.getElementById("econschool-container");
+  
+  if (ash) ash.innerHTML = ashokaCourses.map(courseHTML).join("");
   if (ny) ny.innerHTML = nyuadCourses.map(courseHTML).join("");
   if (ct) ct.innerHTML = caltechCourses.map(courseHTML).join("");
   if (es) es.innerHTML = econschoolCourses.map(courseHTML).join("");
