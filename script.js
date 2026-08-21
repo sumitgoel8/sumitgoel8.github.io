@@ -203,7 +203,7 @@ const econschoolCourses = [
 function courseHTML(item){
   const sep = `<span class="sep">·</span>`;
   const links = (item.links || [])
-    .map(l => `<a href="${l.url}" target="_blank" rel="noopener">[${l.label}]</a>`)
+    .map(l => `<a href="${l.url}">[${l.label}]</a>`)
     .join(sep);
   const parts = [item.term, links].filter(Boolean).join(sep);
   const meta = parts ? `<div class="course-meta">${parts}</div>` : "";
@@ -226,7 +226,7 @@ function paperHTML(item){
       <p class="paper-title">${item.title}</p>
       ${meta}
       <p class="paper-links">
-        <a href="${item.pdfLink}" target="_blank" rel="noopener">[pdf]</a>
+        <a href="${item.pdfLink}">[pdf]</a>
         <button class="linklike" id="button-${item.id}" type="button" onclick="toggleAbstract(${item.id})" aria-expanded="false">[abstract]</button>
       </p>
       <div class="abstract" id="abstract-${item.id}">${item.abstract}</div>
@@ -300,4 +300,10 @@ function toggleAbstract(id){
 
 render();
 
-
+/* Open all links except top navigation in a new tab */
+document.querySelectorAll("a").forEach(link => {
+  if (!link.closest(".topnav")) {
+    link.target = "_blank";
+    link.rel = "noopener";
+  }
+});
