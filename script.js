@@ -129,16 +129,18 @@ const ashokaCourses = [
   {
     name: "Algorithmic Economics",
     term: "Monsoon 2026",
-    links: [
-      { label: "webpage", url: "algoecon.html" },
-    ],
+//     links: [
+//       { label: "webpage", url: "algoecon.html" },
+//     ],
+    links: [],
   },
   {
     name: "Microeconomics (1-Yr MA)",
     term: "Monsoon 2026",
-    links: [
-      { label: "webpage", url: "micro.html" },
-    ],
+//     links: [
+//       { label: "webpage", url: "micro.html" },
+//     ],
+    links: [],
   },
 ]
 
