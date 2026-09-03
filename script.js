@@ -51,23 +51,23 @@ const workingPapers = [
     	id: 8,
         title: "TTC Domains",
         coauthors: "(with Yuki Tamura)",
-        conference_info: "Ext. abs. in <a href='https://wine2025.cs.rutgers.edu/'> Proc. of WINE 2025</a>",
+        conference_info: "Ext. abs. in <a href='https://doi.org/10.1007/978-3-032-18660-7'> Proc. of WINE 2025</a>",
         journal_info: "R&R at Games and Economic Behavior",
         abstract: `For the object reallocation problem, we study whether characterizations of Top Trading Cycles (TTC) based on individual rationality, efficiency, and strategyproofness on the unrestricted domain extend to restricted preference domains. We introduce the top-two condition and show that it offers a useful criterion for answering this question. The condition requires that, within every subset of objects, any two objects that can each be ranked first can also be ranked as the top two, in both possible orders. We first show that this condition is sufficient: on every domain satisfying the top-two condition, TTC is the unique rule satisfying the relevant axioms. We also provide a partial converse. For domains that fail the top-two condition within a small subset of objects and satisfy a mild extension condition, we construct a rule distinct from TTC satisfying these axioms. Our results provide a unifying perspective on existing findings for specific domains, such as the single-peaked and single-dipped domains, while also addressing several previously unexplored domains, including the circular and partial-agreement domains.`,
         pdfLink: "files/exchange_ttc.pdf",
-    },
+    }
+]
+
+const publishedPapers = [
     {
     	id: 7,
         title: "Multi-Agent Contract Design with a Budget",
         coauthors: "(with Wade Hann-Caruthers)",
         conference_info: "Ext. abs. in  <a href='https://doi.org/10.1145/3670865.3673598'>Proc. of EC 2024</a>",
-        journal_info: "R&R at Games and Economic Behavior",
+        journal_info: "Games and Economic Behavior, 2026",
         abstract: `We study a multi-agent contract design problem with moral hazard. In our model, each agent exerts costly effort towards an individual task at which it may either succeed or fail, and the principal, who wishes to encourage effort, has an exclusive-use budget that it can use to reward the agents. A motivating application is crowdsourcing for innovation, where a fixed budget is provided to a crowdsourcing platform to use for rewarding participants based on their submissions. Our main contribution is to introduce a novel class of contracts, which we call Luce contracts, and show that there is always a Luce contract that is optimal. A (generic) Luce contract assigns weights to the agents and distributes the entire budget among the successful agents in proportion to their weights. Furthermore, we characterize effort profiles that can be implemented by Luce contracts and show that Luce contracts offer a way to mitigate the uncertainty in total payments compared to alternative contracts—such as piece-rate or bonus-pool contracts—suggesting their desirability even in environments without budget constraints.`,
         pdfLink: "files/contract_multiagent.pdf",
-    }
-]
-
-const publishedPapers = [
+    },
     {
     	id: 6,
         title: "An Efficiency Ordering of k-Price Auctions under Complete Information",
