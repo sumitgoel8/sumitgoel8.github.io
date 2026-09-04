@@ -129,18 +129,18 @@ const ashokaCourses = [
   {
     name: "Algorithmic Economics",
     term: "Monsoon 2026",
-//     links: [
-//       { label: "webpage", url: "algoecon.html" },
-//     ],
-    links: [],
+    links: [
+      { label: "syllabus", url: "teaching/algoecon_ashoka_syllabus.pdf" },
+    ],
+//     links: [],
   },
   {
     name: "Microeconomics (1-Yr MA)",
     term: "Monsoon 2026",
-//     links: [
-//       { label: "webpage", url: "micro.html" },
-//     ],
-    links: [],
+    links: [
+      { label: "syllabus", url: "teaching/micro_ashoka_syllabus.pdf" },
+    ],
+//     links: [],
   },
 ]
 
@@ -148,7 +148,10 @@ const nyuadCourses = [
   {
     name: "Intermediate Microeconomics",
     term: "Spring 2024\u201326",
-    links: [],
+    links: [
+      { label: "syllabus", url: "teaching/micro_nyuad_syllabus.pdf" },
+
+    ],
   },
 ]
 
