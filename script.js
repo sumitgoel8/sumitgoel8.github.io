@@ -217,7 +217,7 @@ const econschoolCourses = [
 
 
 function courseHTML(item){
-  const sep = `<span class="sep">·</span>`;
+  const sep = `<span class="sep"></span>`;
   const links = (item.links || [])
     .map(l => `<a href="${l.url}">[${l.label}]</a>`)
     .join(sep);
