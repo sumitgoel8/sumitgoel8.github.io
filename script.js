@@ -161,7 +161,7 @@ const nyuadCourses = [
     term: "Spring 2024\u201326",
     links: [
       { label: "syllabus", url: "teaching/micro_nyuad_syllabus.pdf" },
-      { label: "playlist", url: "https://www.youtube.com/playlist?list=PLRwsz_BKrpEc" },
+      { label: "lecture videos", url: "https://www.youtube.com/playlist?list=PLRwsz_BKrpEc" },
     ],
   },
 ]
