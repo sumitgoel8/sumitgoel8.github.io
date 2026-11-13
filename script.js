@@ -63,7 +63,7 @@ const workingPapers = [
         title: "TTC Domains",
         coauthors: `(with ${coauthors.tamura})`,
         conference_info: "Ext. abs. in <a href='https://doi.org/10.1007/978-3-032-18660-7'> Proc. of WINE 2025</a>",
-        journal_info: "R&R at Games and Economic Behavior",
+        journal_info: "",
 		abstract: `For the object reallocation problem, we study whether characterizations of Top Trading Cycles (TTC) based on individual rationality, Pareto or pair efficiency, and strategyproofness on the unrestricted domain extend to restricted preference domains. We introduce a richness condition on domains, the top-two condition, and show that it is both necessary and sufficient for these characterizations to hold. The condition requires that, within every subset of objects, any two objects that can each be ranked first can also be ranked as the top two, in both possible orders. On every domain satisfying the top-two condition, TTC is the unique rule satisfying the axioms, while on every domain that fails it, we construct a rule distinct from TTC that also satisfies these axioms. Our results provide a unifying perspective on existing findings for specific domains, such as the single-peaked and single-dipped domains, while also addressing previously unexplored domains, including the circular and partial-agreement domains.`,
         pdfLink: "files/exchange_ttc.pdf",
     }
