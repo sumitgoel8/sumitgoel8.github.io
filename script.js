@@ -33,6 +33,15 @@ const coauthors = {
 const workingPapers = [
     {
     	id: 11,
+        title: "TTC Domains",
+        coauthors: `(with ${coauthors.tamura})`,
+        conference_info: "Ext. abs. in <a href='https://doi.org/10.1007/978-3-032-18660-7'> Proc. of WINE 2025</a>",
+        journal_info: "",
+		abstract: `For the object reallocation problem, we study whether characterizations of Top Trading Cycles (TTC) based on individual rationality, Pareto or pair efficiency, and strategyproofness on the unrestricted domain extend to restricted preference domains. We introduce a richness condition on domains, the top-two condition, and show that it is both necessary and sufficient for these characterizations to hold. The condition requires that, within every subset of objects, any two objects that can each be ranked first can also be ranked as the top two, in both possible orders. On every domain satisfying the top-two condition, TTC is the unique rule satisfying the axioms, while on every domain that fails it, we construct a rule distinct from TTC that also satisfies these axioms. Our results provide a unifying perspective on existing findings for specific domains, such as the single-peaked and single-dipped domains, while also addressing previously unexplored domains, including the circular and partial-agreement domains.`,
+        pdfLink: "files/exchange_ttc.pdf",
+    }
+    {
+    	id: 10,
         title: "The Effect of Competition in Contests: A Unifying Approach",
         coauthors: `(with ${coauthors.baranski})`,
         conference_info: "",
@@ -41,7 +50,7 @@ const workingPapers = [
         pdfLink: "files/contests_finitetype.pdf",
     },
     {
-    	id: 10,
+    	id: 9,
         title: "Swap Bounded Envy",
         coauthors: `(with ${coauthors.echenique} and ${coauthors.lee})`,
         conference_info: "",
@@ -50,22 +59,13 @@ const workingPapers = [
         pdfLink: "files/allocation_swapBE.pdf",
     },
     {
-    	id: 9,
+    	id: 8,
         title: "Feedback in Dynamic Contests: Theory and Experiment",
         coauthors: `(with ${coauthors.yan} and ${coauthors.zeidel})`,
         conference_info: "",
         journal_info: "",
         abstract: `We study the effect of feedback policies in a two-stage all-pay auction with two players. Equilibrium outcomes are characterized by Cheapest Signal Equilibria, wherein at least one agent bids 0 in stage 1, payoffs for both players are zero, and sum of total bids equals the prize value. We conduct an experiment with four natural feedback policy treatments---full, rank, and two cutoff policies---and while the bids deviate from equilibrium, we fail to reject the hypothesis of no treatment effect on total bids. We also test for the effect of sunk costs and head starts from stage 1 bids on stage 2 bids.`,
         pdfLink: "files/contests_feedback.pdf",
-    },
-    {
-    	id: 8,
-        title: "TTC Domains",
-        coauthors: `(with ${coauthors.tamura})`,
-        conference_info: "Ext. abs. in <a href='https://doi.org/10.1007/978-3-032-18660-7'> Proc. of WINE 2025</a>",
-        journal_info: "",
-		abstract: `For the object reallocation problem, we study whether characterizations of Top Trading Cycles (TTC) based on individual rationality, Pareto or pair efficiency, and strategyproofness on the unrestricted domain extend to restricted preference domains. We introduce a richness condition on domains, the top-two condition, and show that it is both necessary and sufficient for these characterizations to hold. The condition requires that, within every subset of objects, any two objects that can each be ranked first can also be ranked as the top two, in both possible orders. On every domain satisfying the top-two condition, TTC is the unique rule satisfying the axioms, while on every domain that fails it, we construct a rule distinct from TTC that also satisfies these axioms. Our results provide a unifying perspective on existing findings for specific domains, such as the single-peaked and single-dipped domains, while also addressing previously unexplored domains, including the circular and partial-agreement domains.`,
-        pdfLink: "files/exchange_ttc.pdf",
     }
 ]
 
